@@ -1,0 +1,26 @@
+<loading hidden="{{loadingHide}}">
+  {{loadingText}}
+</loading>
+<view class="addMain">
+    <view class="mbTxing">
+        <text>【提醒】请勿发布违法信息，将会被系统永久封闭</text>
+    </view>
+    <form bindsubmit="formSubmit" reportSubmit="true">
+        <view class="duixiang">
+            <label>标题</label>
+            <input maxlength="10" name="title" placeholder="这里输入标题"></input>
+        </view>
+        <view class="mbInput">
+            <view class="miaoshu">
+                <textarea class="section" name="content" placeholder="服务内容描述" value="{{content}}"></textarea>
+            </view>
+        </view>
+        <view bindtap="checkimg" class="checkimg">
+            <image class="uploadPics" data-shopic="{{item}}" mode="aspectFill" src="{{item}}" wx:for="{{imglist}}"></image>
+            <image class="uploadPic" mode="widthFix" src="../../image/add.png"></image>
+        </view>
+        <view class="mbBtn">
+            <button class="vBtn_ok" disabled="{{disabled}}" formType="submit" loading="{{loading}}">确认提交</button>
+        </view>
+    </form>
+</view>

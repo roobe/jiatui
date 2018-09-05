@@ -1,0 +1,29 @@
+<view class="containers">
+    <view class="img">
+        <image mode="aspectFit" src="{{getCdrList.imgurl}}"></image>
+    </view>
+    <view class="row" wx:if="{{getCdrList.xingming}}">
+        <text>姓 名</text>
+        <label>{{getCdrList.xingming}}</label>
+    </view>
+    <view bindtap="callPhoto" class="row" data-mobile="{{getCdrList.shouji}}" wx:if="{{getCdrList.shouji}}">
+        <text>手 机</text>
+        <label>{{getCdrList.shouji}}</label>
+    </view>
+    <view class="row" wx:if="{{getCdrList.zhiwei}}">
+        <text>职 位</text>
+        <label>{{getCdrList.zhiwei}}</label>
+    </view>
+    <view class="row" wx:if="{{getCdrList.youxiang}}">
+        <text>邮 箱</text>
+        <label>{{getCdrList.youxiang}}</label>
+    </view>
+    <view class="row" wx:if="{{getCdrList.gongsi}}">
+        <text>单 位</text>
+        <label>{{getCdrList.gongsi}}</label>
+    </view>
+    <view class="row" wx:if="{{getCdrList.weixin}}">
+        <text>微 信</text>
+        <label>{{getCdrList.weixin}}</label>
+    </view>
+</view>

@@ -1,0 +1,89 @@
+.go-reply,.go-login {
+    z-index: 999999;
+}
+
+#gologin {
+    background: #fff;
+}
+
+.go-login .txt {
+    width: 100%;
+    text-align: center;
+}
+
+.go-login .txt image {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0 0 0;
+}
+
+.go-login .txt text {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #999;
+}
+
+.go-login .txt button {
+    background: #00AA80;
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.go-login .txt button::after {
+    border: none;
+}
+
+.go-login .layout {
+    width: 50%;
+    background: #FFF;
+    margin: 0 25%;
+    z-index: 999999;
+    border-radius: 5px;
+}
+
+.go-login .layout .h2 {
+    width: 90%;
+    padding: 0 5%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.go-login .layout .h2 label {
+    width: 80%;
+    color: #fff;
+    float: left;
+    opacity: 0.5;
+}
+
+.go-login .layout .h2 text {
+    float: right;
+}
+
+.go-login .wxAvatarUrl {
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 3px #e3e3e3 solid;
+}
+
+.go-login .icon-close {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    color: #999;
+    margin-top: 8px;
+    opacity: 0.5;
+}

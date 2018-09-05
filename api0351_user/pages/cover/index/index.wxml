@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="avatarIndex">
+        <image bindtap="upload" class="avatar" mode="aspectFill" src="{{src}}" wx:if="{{src!=null}}"></image>
+        <image bindtap="upload" class="avatar" src="../../../image/upload.png" wx:else></image>
+        <view bindtap="saveAvatar" class="item" data-avatar="{{src}}" data-uid="{{uid}}">确认保存</view>
+        <view class="tixing">上传完图片后,记得点击确认保存按钮</view>
+    </view>
+</view>

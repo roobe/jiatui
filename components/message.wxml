@@ -1,0 +1,17 @@
+<view class="go-reply floatBox" wx:if="{{is_Reply}}">
+    <view class="layout" id="goreply" style="{{goreply}}">
+        <view class="h2">
+            <label>剩余 {{currentNoteLen|0}}/120个字</label>
+            <text bindtap="close_bind" class="icon-close">X</text>
+        </view>
+        <form bindsubmit="formReply" reportSubmit="true">
+            <input hidden="true" name="op" type="text" value="{{userInfo.openid}}"></input>
+            <input hidden="true" name="openid" type="text" value="{{addOpenid}}"></input>
+            <input hidden="true" name="nickname" type="text" value="{{addNnickName}}"></input>
+            <input hidden="true" name="avatar" type="text" value="{{addAvatarUrl}}"></input>
+            <textarea autoHeight bindinput="bindWordLimit" cursorSpacing="45" fixed="true" maxlength="120" name="content" placeholder="这里输入短息内容" showConfirmBar="false" value="{{r_content}}"></textarea>
+            <button formType="submit">点击发送</button>
+        </form>
+    </view>
+    <view class="floatBox floatBoxBg" style="display:block;"></view>
+</view>

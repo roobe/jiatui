@@ -1,0 +1,39 @@
+<view class="user">
+    <view class="userinfo">
+        <view class="author">
+            <image class="av" mode="aspectFit" src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="autxt">
+            <text>我</text>
+        </view>
+    </view>
+    <view class="userinfo">
+        <view class="author">
+            <image class="av" mode="aspectFit" src="{{userOther.avatarUrl}}"></image>
+        </view>
+        <view class="autxt">
+            <text>对方</text>
+        </view>
+    </view>
+</view>
+<view class="tx">
+    <text>热度有什么用？</text>
+    <label>用户拥有一定热度是为了加大自身曝光率，并不是给对方提现。除此外，多多转发分享自身的名片也会增加自身的热度。</label>
+</view>
+<block wx:for="{{RewardList}}" wx:key="content">
+    <view class="RewardList">
+        <view class="p">
+            <image mode="aspectFill" src="{{item.photo}}"></image>
+        </view>
+        <view class="t">
+            <text>{{item.title}}</text>
+            <view>增加对方热度 <label>{{item.hotnum}}</label> 点</view>
+        </view>
+        <view class="zt">
+            <button bindtap="pay" data-hotnum="{{item.hotnum}}" data-img="{{item.photo}}" data-pay="{{item.price}}" data-sid="{{item.rid}}" data-title="{{item.title}}">加热</button>
+        </view>
+    </view>
+    <view class="content">
+     说明：{{item.content}}
+  </view>
+</block>

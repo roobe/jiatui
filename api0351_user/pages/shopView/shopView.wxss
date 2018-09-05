@@ -1,0 +1,149 @@
+page {
+    background: #fff;
+}
+
+.ls {
+    width: 94%;
+    border-bottom: 1px #F1F1F1 solid;
+    padding: 3%;
+    margin-bottom: 10px;
+}
+
+.ls .vi {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-radius: 50px;
+}
+
+.ls .content {
+    width: 100%;
+    display: inline-block;
+    color: #666;
+    background: #fff;
+    padding: 10px 0 0 0;
+}
+
+.ls .vi .img {
+    flex: 1;
+    padding: 5px;
+}
+
+.ls .vi .img image {
+    width: 45px;
+}
+
+.ls .vi .title {
+    flex: 10;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.ls .vi .title text {
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ls .vi .title label {
+    width: 100%;
+    display: inline-block;
+    color: #8B8B8B;
+}
+
+.service {
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    overflow: hidden;
+    border-bottom: 1px #F1F1F1 solid;
+}
+
+.service .h2 {
+    width: 94%;
+    padding: 2% 3%;
+    display: flex;
+}
+
+.service .h2 label {
+    flex: 1;
+    color: #666;
+    border-left: 2px #00AA80 solid;
+    padding-left: 10px;
+}
+
+.service .h2 text {
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.service-ul {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.service-li {
+    text-align: center;
+    width: 50%;
+    height: 130px;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.service-li image {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    height: 130px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-li text {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    color: #fff;
+}
+
+.service-li label {
+    background: #333;
+    width: 90%;
+    height: 22px;
+    margin: 0 5% 0 5%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 9;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.map {
+    width: 92%;
+    margin: 3%;
+    background: #f8f8f8;
+    padding: 1%;
+}
+
+.map .h2 {
+    width: 94%;
+    padding: 2% 3%;
+    display: flex;
+}
+
+.map .h2 label {
+    flex: 1;
+    color: #666;
+    text-align: center;
+}

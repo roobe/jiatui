@@ -1,0 +1,346 @@
+@import "../../../__wuBaseWxss__/0.wxss";
+
+page {
+    background: #fff;
+}
+
+.container {
+    background: #fff;
+    position: relative;
+}
+
+.search {
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #F2F2F2;
+    display: -webkit-box;
+    background: #FAFAFA;
+}
+
+.search-box {
+    width: 94%;
+    margin: 0 3%;
+    position: relative;
+}
+
+.search-box text {
+    display: block;
+    width: 16%;
+    padding-left: 6%;
+    text-align: center;
+    background: #ECECEC;
+    float: left;
+    height: 64rpx;
+    line-height: 64rpx;
+    color: #666;
+}
+
+.search-box .search-input {
+    height: 64rpx;
+    width: 76%;
+    padding-left: 2%;
+    float: left;
+    background: #F3F3F3;
+}
+
+.search-box .search-btn {
+    width: 10%;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+button.search-btn {
+    background: none;
+    padding: 0 0.8em;
+}
+
+button.search-btn icon {
+    vertical-align: top;
+    margin-top: 15rpx;
+}
+
+.search-btn::after {
+    display: none;
+}
+
+.recomme {
+    width: 96%;
+    padding: 0 2%;
+    border-bottom: 1px solid #F2F2F2;
+    display: inline-block;
+    background: #fff;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.tab-item {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.tab-item label {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+}
+
+.tab-item label image {
+    width: 40px;
+    height: 40px;
+}
+
+.tab-item text {
+    width: 100%;
+    display: block;
+    color: #666;
+}
+
+.moreRecome {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px 0 8px 0;
+}
+
+.moreRecome text {
+    color: #369;
+    background: #F6F6F6;
+    padding: 3px 15px;
+    font-size: 14px;
+}
+
+.item-ans {
+    width: 94%;
+    height: 120rpx;
+    display: flex;
+    padding: 3%;
+    border-bottom: 1px solid #F2F2F2;
+    overflow: hidden;
+    position: relative;
+}
+
+.avatar {
+    position: relative;
+    padding-right: 30rpx;
+    flex: 1;
+}
+
+.avatar .img {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.avatar .doyen {
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    bottom: -2px;
+    right: 20rpx;
+}
+
+.expertInfo {
+    color: #B0B0B0;
+    overflow: hidden;
+    flex: 8;
+}
+
+.expertInfo .name {
+    font-size: 14px;
+    color: #000;
+}
+
+.expertInfo .tag {
+    font-size: 12px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.askBtn {
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 50rpx;
+    border: 1px solid #00AA80;
+    color: #00AA80;
+    flex: 1;
+    position: absolute;
+    right: 15px;
+    top: 28px;
+}
+
+.tab-content {
+    background: #fff;
+}
+
+.scoll-h {
+    height: 100%;
+}
+
+.expertInfo .answerHistory {
+    width: 90%;
+    overflow: hidden;
+}
+
+.expertInfo .answerHistory text {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    height: 18px;
+    overflow: hidden;
+}
+
+.tools {
+    width: 94%;
+    padding: 2% 3%;
+    border-bottom: 1px #F1F1F1 solid;
+    position: relative;
+}
+
+.tools text {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tools label {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: #999;
+}
+
+.tools button {
+    width: 80px;
+    font-size: 12px;
+    position: absolute;
+    right: 15px;
+    bottom: 16px;
+    background: #FEA489;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.tools button::after {
+    border: none;
+}
+
+.Banner {
+    width: 94%;
+    height: 90px;
+    background: #fff;
+    overflow: hidden;
+    padding: 3%;
+    border-bottom: 1px #F1F1F1 solid;
+}
+
+.Banner swiper {
+    height: 90px;
+}
+
+.Banner .slide-image {
+    width: 100%;
+    height: 90px;
+}
+
+.navMenu {
+    width: 100%;
+    background: #FDFDFD;
+}
+
+.active {
+    color: #333;
+    background: #FAFAFA;
+}
+
+.menu_box {
+    width: 90%;
+    border: 1rpx solid #F1F1F1;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    display: flex;
+    background: #fff;
+    margin: 10px 5% 0 5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu1 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu2 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.borders {
+    color: #333;
+    background: #F6F6F6;
+}
+
+.tab1,.tab2 {
+    background: #fff;
+    width: 100%;
+    border-top: 1rpx solid #F1F1F1;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.searchClass {
+    width: 100%;
+    border-bottom: 1px #F1F1F1 solid;
+    border-top: 1px #F1F1F1 solid;
+    padding: 10px 0;
+    background: #FFFFF7;
+}
+
+.searchClass .h2 {
+    width: 90%;
+    margin: 0 5%;
+    color: #666;
+    padding-bottom: 5px;
+}
+
+.searchClass .txt {
+    width: 90%;
+    border: 1rpx solid #F1F1F1;
+    text-align: center;
+    height: 50rpx;
+    line-height: 50rpx;
+    display: flex;
+    background: #fff;
+    margin: 0 5%;
+}
+
+.searchClass1 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+}
+
+.searchClass2 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+}
+
+.searchClass3 {
+    color: #999;
+    flex: 1;
+}

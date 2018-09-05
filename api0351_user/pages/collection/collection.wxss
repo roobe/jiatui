@@ -1,0 +1,242 @@
+@import "../../../__wuBaseWxss__/0.wxss";
+
+page {
+    background: #fff;
+}
+
+.container {
+    background: #fff;
+}
+
+.item-ans {
+    width: 90%;
+    height: 100rpx;
+    padding: 30rpx 5%;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.item-ans .li {
+    display: flex;
+    float: left;
+}
+
+.item-ans .li .avatar {
+    flex: 1;
+}
+
+.item-ans .li .avatar .img {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.item-ans .li .expertInfo {
+    flex: 4;
+    padding-top: 4px;
+    color: #B0B0B0;
+    padding-left: 10px;
+}
+
+.item-ans .li .expertInfo .name {
+    font-size: 16px;
+    color: #000;
+}
+
+.item-ans .askBtn {
+    font-size: 12px;
+    border-radius: 50rpx;
+    border: 1px solid #00AA80;
+    color: #00AA80;
+    padding: 4px 10px;
+    float: right;
+    margin-top: 10px;
+}
+
+.navMenu {
+    width: 100%;
+    background: #FDFDFD;
+    padding-bottom: 10px;
+}
+
+.active {
+    color: #333;
+    background: #FAFAFA;
+}
+
+.menu_box {
+    width: 90%;
+    border: 1rpx solid #F1F1F1;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    display: flex;
+    background: #fff;
+    margin: 10px 5% 0 5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu1 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu2 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.borders {
+    color: #333;
+    background: #F6F6F6;
+}
+
+.tab1,.tab2 {
+    background: #fff;
+    width: 100%;
+    border-top: 1rpx solid #F1F1F1;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.zhibtn {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    width: 94%;
+    padding: 2% 3%;
+    border-top: 1px #F1F1F1 solid;
+    background: #FAFAFA;
+}
+
+.zhibtn button {
+    font-size: 14px;
+    padding: 3px 0;
+    background: #FEA489;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+.zhibtn button::after {
+    border: none;
+}
+
+#gocodisplay {
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    left: 0;
+    bottom: -35%;
+    background-size: contain;
+    opacity: 0;
+    -webkit-transition: bottom .5s ease,opacity .6s ease;
+    webkit-transition: bottom .5s ease,opacity .6s ease;
+}
+
+.go-login .floatBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.go-login .floatBoxBg {
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999998;
+}
+
+.icon-close {
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    border: 1px solid #ccc;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    color: #999;
+    margin-top: 8px;
+}
+
+.go-login {
+    z-index: 999999;
+}
+
+.go-login .txt {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.go-login .txt view {
+    width: 90%;
+    margin: 0 5%;
+    border-bottom: 1px #FAFAFA solid;
+    display: flex;
+    padding: 5px 0;
+}
+
+.go-login .txt label {
+    flex: 2;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+
+.go-login .txt input {
+    flex: 10;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.go-login .btnf {
+    width: 90%;
+    margin: 0 5% 3% 5%;
+}
+
+.go-login .btnf button {
+    background: #00AA80;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 0;
+    border-radius: 50px;
+}
+
+.go-login .btnf button::after {
+    border: none;
+}
+
+.go-login .layout {
+    width: 90%;
+    background: #FFF;
+    margin: 0 5%;
+    z-index: 999999;
+}
+
+.go-login .layout .h2 {
+    border-bottom: 2rpx #F3F3F3 solid;
+    width: 94%;
+    padding: 0 3%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.go-login .layout .h2 label {
+    width: 80%;
+    color: #666;
+    float: left;
+}
+
+.go-login .layout .h2 text {
+    float: right;
+}

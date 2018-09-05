@@ -1,0 +1,31 @@
+<view class="container">
+    <view class="noData" wx:if="{{noData==0}}">
+        暂无任何打赏记录
+  </view>
+    <block wx:else>
+        <view class="item" wx:for="{{infoList}}">
+            <view class="h2">
+                <text style=" text-align: left">热度记录</text>
+                <text style=" text-align: right;">{{item.srtime}}</text>
+            </view>
+            <view class="datatxt">
+                <view class="img">
+                    <image mode="aspectFill" src="{{item.img}}"></image>
+                </view>
+                <view class="txt">
+                    <text>{{item.title}}</text>
+                    <label>为您增加了{{item.hotnum}}点热度</label>
+                </view>
+            </view>
+            <view class="datetime">
+                <view class="tm">
+                    <text>{{item.username}}</text>
+                </view>
+            </view>
+            <view class="code" wx:if="{{item.display==0}}">
+                <text>使用时请出示给管理员</text>
+                <image src="http://qr.liantu.com/api.php?&w=900&text=piao?pid={{item.plid}}op={{item.openid}}"></image>
+            </view>
+        </view>
+    </block>
+</view>

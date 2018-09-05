@@ -1,0 +1,962 @@
+.wx {
+    width: 100%;
+    text-align: center;
+    padding-top: 20%;
+    color: #666;
+}
+
+.wx .wxAvatarUrl {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 4px #D4D4D4 solid;
+}
+
+.wx text {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.wx button {
+    background: #00AA80;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.wx button::after {
+    border: none;
+}
+
+.container {
+    position: relative;
+}
+
+.tools-grid button {
+    width: 70%;
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+    font-size: 14px;
+    padding-top: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+}
+
+.tools-grid button::after {
+    border: none;
+}
+
+.index {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 12px;
+    z-index: 2;
+}
+
+.NewsTop {
+    width: 94%;
+    height: auto;
+    background: #fff;
+    margin: 0 3% 0 3%;
+    overflow: hidden;
+    position: relative;
+}
+
+.NewsTop .backGro {
+    width: 40px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    z-index: 999999;
+    border: 1px #D4D4D4 solid;
+    padding: 0 5px;
+    border-radius: 50px;
+    background: #666;
+}
+
+.NewsTop .backGro text {
+    font-size: 10px;
+    color: #D4D4D4;
+}
+
+.NewsTop .admin {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 999999;
+}
+
+.NewsTop .admin image {
+    width: 26px;
+    height: 26px;
+}
+
+.NewsTop .topBg {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    background: #00AA80;
+}
+
+.NewsTop .topBg image {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.NewsTop .userAuthor {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    left: 0px;
+    top: -40px;
+    z-index: 10;
+    text-align: center;
+}
+
+.NewsTop .userAuthor image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: 2px #fff solid;
+    background: #fff;
+}
+
+.NewsTop .userName {
+    width: 100%;
+    text-align: center;
+}
+
+.NewsTop .userName text {
+    font-size: 18px;
+    color: #336699;
+    font-weight: bold;
+}
+
+.NewsTop .userOther {
+    width: 100%;
+    text-align: center;
+    color: #999;
+    border-bottom: 1rpx solid #F8F8F8;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.mobile {
+    width: 84%;
+    margin: 0 3% 0 3%;
+    padding: 10px 5%;
+    background: #fff;
+    border-bottom: 1rpx solid #F8F8F8;
+    display: flex;
+    position: relative;
+}
+
+.mobile text {
+    font-family: Arial;
+    flex: 11;
+    color: #666;
+    padding-left: 15px;
+}
+
+.mobile label {
+    flex: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    background: #F8F8F8;
+    color: #999;
+    height: 20px;
+    line-height: 20px;
+    padding: 1px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.mobile image.img {
+    width: 4%;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}
+
+.user_gs {
+    width: 84%;
+    margin: 0 3% 0 3%;
+    padding: 10px 5%;
+    background: #fff;
+    border-bottom: 1rpx solid #F1F1F1;
+    position: relative;
+}
+
+.user_gs text {
+    color: #666;
+    padding-left: 15px;
+}
+
+.user_gs image.img {
+    width: 4%;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}
+
+.user_gs .daohang {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    background: #F8F8F8;
+    color: #999;
+    height: 20px;
+    line-height: 20px;
+    padding: 1px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.navMenu {
+    width: 94%;
+    margin: 10px 3% 0 3%;
+}
+
+.swiper-tab {
+    width: 100%;
+    border-bottom: 1rpx solid #F1F1F1;
+    text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+    display: flex;
+    background: #fff;
+}
+
+.swiper-tab-item {
+    color: #999;
+    flex: 1;
+    border-right: 1px #EEE solid;
+}
+
+.active {
+    color: #333;
+    background: #FAFAFA;
+}
+
+.menu_box {
+    width: 100%;
+    border-bottom: 1rpx solid #F1F1F1;
+    text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+    display: flex;
+    background: #fff;
+}
+
+.menu1,.menu2,.menu3 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+}
+
+.borders {
+    color: #333;
+    background: #FAFAFA;
+}
+
+.tab1,.tab2,.tab3 {
+    background: #fff;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.tools {
+    width: 94%;
+    margin: 0 3% 0 3%;
+    background: #fff;
+    display: flex;
+}
+
+.tools-grid {
+    flex: 1;
+    overflow: hidden;
+    background: #FDFDFD;
+}
+
+.tools .tools-icon {
+    width: 100%;
+    height: 22px;
+    overflow: hidden;
+    text-align: center;
+    color: #999;
+    margin-top: 8px;
+}
+
+.tools .tools-icon image {
+    width: 22px;
+    height: 22px;
+}
+
+.tools .tools-label {
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.tools .r {
+    border-right: 1rpx solid #f4f4f4;
+}
+
+.footerTool {
+    width: 100%;
+    padding: 10px 0;
+    display: inline-block;
+    border-top: 1px #F1F1F1 solid;
+    margin-top: 10px;
+}
+
+.footerTool button {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 12px;
+    background: #FEA489;
+    border-radius: 50px;
+    color: #FFF;
+    height: 38px;
+    line-height: 38px;
+    border: none;
+}
+
+.footerTool button::after {
+    border: none;
+}
+
+.footerTool button.button-hover {
+    background: #FE8C6B;
+}
+
+.footerTool .btns {
+    width: 90%;
+    padding: 0 5% 2% 5%;
+    display: flex;
+}
+
+.footerTool button#a {
+    background: #FEA489;
+    margin: 5px 8px 0 0;
+    flex: 1;
+}
+
+.footerTool button#b {
+    background: #00AA80;
+    margin: 5px 0 0 8px;
+    flex: 1;
+}
+
+.index_Tb {
+    width: 100%;
+    padding: 5% 0 0 0;
+}
+
+.index_Tb .text {
+    width: 90%;
+    display: block;
+    padding: 0 5%;
+}
+
+.picture_item {
+    width: 94%;
+    margin-top: 10px;
+    padding: 0 3%;
+}
+
+.picture_item .imgList {
+}
+
+.picture_item image {
+    width: 31%;
+    height: 150rpx;
+    float: left;
+    overflow: hidden;
+    background: #333;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.index_Tc {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.index_Tc .h2 {
+    border-bottom: 2rpx #F3F3F3 solid;
+    width: 94%;
+    padding: 2% 3%;
+    display: flex;
+}
+
+.index_Tc .h2 label {
+    flex: 1;
+    color: #999;
+}
+
+.index_Tc .h2 text {
+    flex: 1;
+    text-align: right;
+    color: #999;
+}
+
+.index_Tc .Te_a {
+    width: 94%;
+    height: auto;
+    margin: 3%;
+    border-bottom: 2rpx #F9F9F9 solid;
+}
+
+.index_Tc .book {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2rpx #F3F3F3 solid;
+    display: inline-block;
+    background: #fff;
+}
+
+.index_Tc .book .rbtn {
+    width: 94%;
+    padding: 0 3%;
+    display: flex;
+}
+
+.index_Tc .book .rbtn .a {
+    flex: 4;
+}
+
+.index_Tc .book .rbtn .b {
+    flex: 1;
+}
+
+.index_Tc .book textarea {
+    width: 94%;
+    height: 28px;
+    line-height: 28px;
+    padding: 5px 3%;
+    background: #F5F5F5;
+}
+
+.index_Tc .book button {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    background: #00AA80;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.index_Tc .book button::after {
+    border: none;
+}
+
+.index_Tc .book .button-hover {
+    color: #008262;
+    background-color: #00C493;
+}
+
+.Te_a .Te_a_author {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.Te_a .author {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: #999;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.Te_a .author image {
+    width: 30px;
+    height: 30px;
+}
+
+.Te_a .names {
+    height: 30px;
+    font-size: 12px;
+}
+
+.Te_a .times {
+    height: 30px;
+    font-size: 12px;
+    float: right;
+    color: #999;
+}
+
+.Te_a .Te_a_content {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+    word-break: break-all;
+}
+
+.Te_a .Te_a_content label {
+    background: #F5F5F5;
+    display: inline-block;
+    font-size: 8px;
+    color: #666;
+    margin-right: 8px;
+    padding: 2px 5px;
+}
+
+.Te_a_contents {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: center;
+    color: #666;
+}
+
+.content-h {
+    background: #F4F8F7;
+    width: 94%;
+    padding: 3%;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.content-h .UserName .UserPic {
+    flex: 4;
+    height: 62rpx;
+    overflow: hidden;
+}
+
+.content-h .UserName .UserPic text {
+    width: 300rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    padding-left: 15rpx;
+    overflow: hidden;
+    color: #666;
+    font-size: 12px;
+    border-left: 3px #00AA80 solid;
+}
+
+.content-h .hui {
+    width: 100%;
+    word-break: break-all;
+}
+
+.service {
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    overflow: hidden;
+    border-bottom: 1px #F1F1F1 solid;
+}
+
+.service-ul {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.service-li {
+    text-align: center;
+    height: 145px;
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    margin: 10px auto;
+    position: relative;
+}
+
+.service-li image {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    height: 120px;
+    display: block;
+}
+
+.service-li text {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    height: 25px;
+    line-height: 25px;
+    background: #333;
+    color: #fff;
+    display: block;
+}
+
+.service .h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.service .h2 text {
+    width: 100%;
+    color: #999;
+    font-size: 12px;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.noServ {
+    width: 100%;
+    text-align: center;
+    color: #999;
+    line-height: 60px;
+}
+
+.noServ image {
+    width: 20px;
+    height: 20px;
+}
+
+.noServ text {
+    width: 100%;
+    display: inline-block;
+}
+
+#goreply {
+    display: block;
+    z-index: 999999;
+    position: fixed;
+    left: 0;
+    bottom: -45%;
+    background-size: contain;
+    opacity: 0;
+    -webkit-transition: bottom .5s ease,opacity .6s ease;
+    webkit-transition: bottom .5s ease,opacity .6s ease;
+}
+
+#gologin {
+    display: block;
+    z-index: 999999;
+    position: fixed;
+    left: 0;
+    bottom: -45%;
+    background-size: contain;
+    opacity: 0;
+    -webkit-transition: bottom .5s ease,opacity .6s ease;
+    webkit-transition: bottom .5s ease,opacity .6s ease;
+}
+
+.go-reply,.go-login {
+    z-index: 999999;
+}
+
+#gologin {
+    background: #fff;
+}
+
+.go-login .txt {
+    width: 100%;
+    text-align: center;
+}
+
+.go-login .txt image {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0 0 0;
+}
+
+.go-login .txt text {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #999;
+}
+
+.go-login .txt button {
+    background: #00AA80;
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.go-login .txt button::after {
+    border: none;
+}
+
+.go-login .layout {
+    width: 50%;
+    background: #FFF;
+    margin: 0 25%;
+    z-index: 999999;
+    border-radius: 5px;
+}
+
+.go-login .layout .h2 {
+    width: 90%;
+    padding: 0 5%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.go-login .layout .h2 label {
+    width: 80%;
+    color: #fff;
+    float: left;
+    opacity: 0.5;
+}
+
+.go-login .layout .h2 text {
+    float: right;
+}
+
+.go-login .wxAvatarUrl {
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 3px #e3e3e3 solid;
+}
+
+.go-login .icon-close {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    color: #999;
+    margin-top: 8px;
+    opacity: 0.5;
+}
+
+.go-reply .layout {
+    width: 92%;
+    background: #FFF;
+    margin: 0 4%;
+    z-index: 999999;
+}
+
+.go-reply .layout .h2 {
+    border-bottom: 2rpx #F3F3F3 solid;
+    width: 94%;
+    padding: 0 3%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.go-reply .layout .h2 label {
+    width: 80%;
+    color: #666;
+    float: left;
+}
+
+.go-reply .layout .h2 text {
+    float: right;
+}
+
+.go-reply .layout textarea {
+    background: #F5F5F5;
+    width: 90%;
+    margin: 3%;
+    padding: 2%;
+    min-height: 50px;
+}
+
+.go-reply .layout button {
+    background: #00AA80;
+    color: #fff;
+    margin: 3%;
+    width: 94%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.go-reply .floatBox,.go-login .floatBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.go-reply .floatBoxBg,.go-login .floatBoxBg {
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999998;
+}
+
+.icon-close {
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    border: 1px solid #ccc;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    color: #999;
+    margin-top: 8px;
+}
+
+.indexTo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.indexTo label {
+    font-size: 12px;
+    color: #999;
+}
+
+.no_jubao {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.no_jubao text {
+    font-size: 12px;
+    color: #999;
+}
+
+
+
+#gocodisplay {
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    left: 0;
+    bottom: -35%;
+    background-size: contain;
+    opacity: 0;
+    -webkit-transition: bottom .5s ease,opacity .6s ease;
+    webkit-transition: bottom .5s ease,opacity .6s ease;
+}
+
+.go-login .floatBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.go-login .floatBoxBg {
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999998;
+}
+
+.icon-close {
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    border: 1px solid #ccc;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    color: #999;
+    margin-top: 8px;
+}
+
+.go-login {
+    z-index: 999999;
+}
+
+.go-login .txt {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.go-login .txt view {
+    width: 90%;
+    margin: 0 5%;
+    border-bottom: 1px #FAFAFA solid;
+    display: flex;
+    padding: 5px 0;
+}
+
+.go-login .txt label {
+    flex: 2;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+
+.go-login .txt input {
+    flex: 10;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.go-login .btnf {
+    width: 90%;
+    margin: 0 5% 3% 5%;
+}
+
+.go-login .btnf button {
+    background: #00AA80;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50px;
+}
+
+.go-login .btnf button::after {
+    border: none;
+}
+
+.go-login .layout {
+    width: 90%;
+    background: #FFF;
+    margin: 0 5%;
+    z-index: 999999;
+}
+
+.go-login .layout .h2 {
+    border-bottom: 2rpx #F3F3F3 solid;
+    width: 94%;
+    padding: 0 3%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.go-login .layout .h2 label {
+    width: 80%;
+    color: #666;
+    float: left;
+}
+
+.go-login .layout .h2 text {
+    float: right;
+}

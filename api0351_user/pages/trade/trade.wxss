@@ -1,0 +1,315 @@
+page {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+scroll-view {
+    height: 100%;
+    width: 100%;
+}
+
+.tools {
+    width: 94%;
+    padding: 2% 3%;
+    border-bottom: 1px #F1F1F1 solid;
+    position: relative;
+}
+
+.tools text {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tools label {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: #999;
+}
+
+.tools button {
+    width: 80px;
+    font-size: 12px;
+    position: absolute;
+    right: 15px;
+    bottom: 16px;
+    background: #FEA489;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.tools button::after {
+    border: none;
+}
+
+.shopNews {
+    width: 100%;
+}
+
+.shopNews #ol {
+    width: 90%;
+    display: flex;
+    padding: 3% 5%;
+    border-bottom: 1px #F4F4F4 solid;
+}
+
+.shopNews #ol .li {
+    flex: 1;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.shopNews #ol .li image {
+    width: 70%;
+    border-radius: 5px;
+    -webkit-filter: grayscale(1);
+}
+
+.shopNews #ol .li label {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.shopNews #ul .li {
+    width: 90%;
+    display: flex;
+    padding: 3% 0;
+    border-bottom: 1px #F4F4F4 solid;
+    margin: 0 5%;
+}
+
+.shopNews #ul .li text {
+    flex: 10;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.shopNews #ul .li label {
+    flex: 2;
+    text-align: right;
+    display: inline-block;
+    color: #999;
+}
+
+.item {
+    width: 90%;
+    height: auto;
+    background: #fff;
+    border-bottom: 1px #F4F4F4 solid;
+    padding: 5% 5% 0 5%;
+}
+
+.textCms {
+    width: 100%;
+    color: #333;
+}
+
+.viPhoto {
+    width: 100%;
+    padding: 20rpx 0;
+}
+
+.wiPhoto {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.poster {
+    width: 50%;
+    z-index: 8;
+    margin-right: 10px;
+}
+
+.UserName {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20rpx;
+    margin-bottom: 10rpx;
+}
+
+.UserName .UserPic {
+    flex: 4;
+    height: 60rpx;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.UserName .UserPic image {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50px;
+}
+
+.UserName .UserPic text {
+    width: 300rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-left: 10rpx;
+    position: absolute;
+    overflow: hidden;
+    color: #666;
+}
+
+.UserName .UserDate-a {
+    flex: 2;
+    text-align: right;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #B4B4B4;
+    margin-top: 15rpx;
+    border-right: 6rpx #00AC2C solid;
+    padding-right: 10px;
+}
+
+.Banner {
+    width: 94%;
+    height: 90px;
+    background: #fff;
+    overflow: hidden;
+    padding: 3%;
+    border-bottom: 1px #F1F1F1 solid;
+}
+
+.Banner swiper {
+    height: 90px;
+}
+
+.Banner .slide-image {
+    width: 100%;
+    height: 90px;
+}
+
+.shopList {
+    width: 100%;
+}
+
+.navMenu {
+    width: 100%;
+    background: #FDFDFD;
+}
+
+.active {
+    color: #333;
+    background: #FAFAFA;
+}
+
+.menu_box {
+    width: 90%;
+    border: 1rpx solid #F1F1F1;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    display: flex;
+    background: #fff;
+    margin: 10px 5% 0 5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu1 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu2 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+}
+
+.menu3 {
+    color: #999;
+    flex: 1;
+    border-right: 1px #F1F1F1 solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.borders {
+    color: #333;
+    background: #F6F6F6;
+}
+
+.tab1,.tab2,.tab3 {
+    background: #fff;
+    width: 100%;
+    border-top: 1rpx solid #F1F1F1;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.tab2 .ls {
+    width: 90%;
+    border-bottom: 1px #F1F1F1 solid;
+    padding: 5%;
+}
+
+.tab2 .ls .vi {
+    background: #F5F5F5;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-radius: 50px;
+}
+
+.tab2 .ls .content {
+    width: 100%;
+    display: inline-block;
+    color: #666;
+    background: #fff;
+    padding: 10px 0 0 0;
+}
+
+.tab2 .ls .vi .img {
+    flex: 1;
+    padding: 5px;
+}
+
+.tab2 .ls .vi .img image {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.tab2 .ls .vi .title {
+    flex: 10;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.tab2 .ls .vi .title text {
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tab2 .ls .vi label {
+    color: #999;
+}
+
+#go-top {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 6%;
+    bottom: 15%;
+    z-index: 999;
+    background: url(https://tp.api0351.com/static/images/top.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+    -webkit-transition: bottom .8s ease,opacity .6s ease;
+    webkit-transition: bottom .8s ease,opacity .6s ease;
+}

@@ -1,0 +1,100 @@
+page {
+    background: #EEEDF2;
+}
+
+.containers {
+    background: #fff;
+    border-top: 1px #F1F1F1 solid;
+}
+
+.row button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    border-radius: 0;
+    color: #00AA80;
+    height: 25px;
+    line-height: 25px;
+    z-index: 999999;
+}
+
+.row button {
+    border: none;
+}
+
+.row_area {
+    width: 100%;
+}
+
+.row_area textarea {
+    font-size: 14px;
+    padding: 10px 3%;
+    width: 94%;
+    min-height: 180px;
+    background: #fff;
+}
+
+.row_btn {
+    padding: 5%;
+    width: 90%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.row_btn button {
+    border-radius: 50px;
+    background: #00AA80;
+    font-size: 14px;
+    padding: 4px 0;
+    color: #fff;
+    border: none;
+}
+
+.row_btn button::after {
+    border: none;
+}
+
+.row_btn button.button-hover {
+    color: #008262;
+    background-color: #00C493;
+}
+
+.picture_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    background: #FAFAFA;
+    width: 94%;
+    margin: 0 3%;
+}
+
+.upload_progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background-color: #000;
+    color: #fff;
+    width: 120rpx;
+    height: 120rpx;
+    text-align: center;
+    line-height: 120rpx;
+    font-size: 12px;
+}
+
+.picture_item {
+    position: relative;
+    width: 120rpx;
+    height: 120rpx;
+    margin: 10px;
+}
+
+.picture_item image {
+    width: 120rpx;
+    height: 120rpx;
+}

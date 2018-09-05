@@ -1,0 +1,21 @@
+.viewNr {
+    width: 90%;
+    padding: 0 5% 5% 5%;
+    color: #333;
+    background: #fff;
+}
+
+.viewNr .h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.viewNr .h2 image {
+    width: 70%;
+}
+
+.viewNr text {
+    width: 100%;
+    display: inline-block;
+}

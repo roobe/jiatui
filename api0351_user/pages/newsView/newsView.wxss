@@ -1,0 +1,94 @@
+page {
+    background: #FFF;
+}
+
+.mbTxing {
+    width: 92%;
+    background: #FFF5EC;
+    padding: 3% 4%;
+    color: #FF8E28;
+    font-size: 10pt;
+    border-bottom: 2rpx dashed #FFE0C4;
+}
+
+.mbTxing text {
+    width: 100%;
+    display: block;
+}
+
+.titles {
+    width: 92%;
+    padding: 10px 4%;
+    background: #FFFBF7;
+    color: #666;
+    font-size: 10pt;
+    text-align: center;
+    border-bottom: 2rpx dashed #FFE0C4;
+}
+
+.titles text {
+    width: 100%;
+    display: block;
+}
+
+.viewMain {
+    width: 100%;
+    background: #fff;
+}
+
+.content {
+    width: 92%;
+    margin: 30rpx auto 0;
+}
+
+.content .wxParse-inline {
+    font-size: 14px;
+    color: #333;
+}
+
+.content .wxParse-img {
+    width: 50%;
+    overflow: hidden;
+    border: 2rpx #E1E1E1 solid;
+    padding: 2rpx;
+    margin: 15rpx auto;
+}
+
+.zhuan {
+    width: 90%;
+    padding: 3% 5% 100px 5%;
+    border-top: 1px #F1F1F1 solid;
+    margin-top: 15px;
+}
+
+.zhuan button {
+    border-radius: 50px;
+    background: #fff;
+    font-size: 15px;
+    color: #999;
+    border: 2rpx #F1F1F1 solid;
+}
+
+.zhuan button::after {
+    border: 0;
+}
+
+.goHome {
+    width: 90%;
+    padding: 0 5%;
+    position: fixed;
+    bottom: 15px;
+}
+
+.goHome button {
+    border: none;
+    padding: 4px 0;
+    border-radius: 50px;
+    background: #FEA489;
+    color: #fff;
+    font-size: 14px;
+}
+
+.goHome button::after {
+    border: none;
+}

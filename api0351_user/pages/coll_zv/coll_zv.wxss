@@ -1,0 +1,33 @@
+.img {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px #F1F1F1 solid;
+}
+
+.containers {
+    background: #fff;
+    padding: 0 2%;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px #F1F1F1 solid;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    position: relative;
+}
+
+.row text {
+    flex: 2;
+    text-align: left;
+    color: #999;
+    padding-left: 15px;
+}
+
+.row label {
+    flex: 10;
+    text-align: right;
+    color: #333;
+    padding-right: 15px;
+}

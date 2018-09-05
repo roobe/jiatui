@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "api0351_user/pages/index/index",
+        "api0351_user/pages/user/user",
+        "api0351_user/pages/basics/basics",
+        "api0351_user/pages/cover/index/index",
+        "api0351_user/pages/cover/upload/upload",
+        "api0351_user/pages/contact/contact",
+        "api0351_user/pages/message/message",
+        "api0351_user/pages/advice/advice",
+        "api0351_user/pages/about/about",
+        "api0351_user/pages/business/business",
+        "api0351_user/pages/collection/collection",
+        "api0351_user/pages/share/share",
+        "api0351_user/pages/shops/shops",
+        "api0351_user/pages/addserv/addserv",
+        "api0351_user/pages/edserv/edserv",
+        "api0351_user/pages/serview/serview",
+        "api0351_user/pages/serlist/serlist",
+        "api0351_user/pages/shop/shop",
+        "api0351_user/pages/shopView/shopView",
+        "api0351_user/pages/trade/trade",
+        "api0351_user/pages/private/private",
+        "api0351_user/pages/newsView/newsView",
+        "api0351_user/pages/reward/reward",
+        "api0351_user/pages/rewardlog/rewardlog",
+        "api0351_user/pages/test/test",
+        "api0351_user/pages/coll_zv/coll_zv",
+        "api0351_user/pages/malllist/malllist",
+        "api0351_user/pages/ification/ification",
+        "api0351_user/pages/classlist/classlist",
+        "api0351_user/pages/backgro/backgro"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FAFAFA",
+        "navigationBarTitleText": "加载中",
+        "navigationBarTextStyle": "black"
+    }
+}

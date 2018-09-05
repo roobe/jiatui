@@ -1,0 +1,24 @@
+<view class="containers">
+    <form bindsubmit="formSubmit" reportSubmit="true">
+        <input hidden="true" name="openid" type="text" value="{{openid}}"></input>
+        <view class="row_area">
+            <textarea autoHeight maxlength="600" name="signature" placeholder="说明业务范围或个人介绍以便他人更快捷检索" value="{{signature}}"></textarea>
+        </view>
+        <view class="picture_list" wx:if="{{wxConfig[7].value==2}}">
+            <view class="picture_item" wx:for="{{upload_picture_list}}">
+                <image bindtap="delImg" data-id="{{item.id}}" mode="aspectFill" src="{{item.imgUrl}}" wx:if="{{item.imgUrl}}"></image>
+                <image mode="aspectFill" src="{{item.path}}" wx:if="{{item.upload_percent<100}}"></image>
+                <image mode="aspectFill" src="{{item.path_server}}" wx:if="{{item.upload_percent==100}}"></image>
+                <view class="upload_progress" wx:if="{{item.upload_percent<100}}">
+              {{item.upload_percent}}%
+            </view>
+            </view>
+            <view class="picture_item">
+                <image bindtap="chooseimage" mode="aspectFill" src="../../image/add.png"></image>
+            </view>
+        </view>
+        <view class="row_btn" style="border-bottom: none">
+            <button formType="submit" type="primary">提交保存</button>
+        </view>
+    </form>
+</view>

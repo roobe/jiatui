@@ -1,0 +1,57 @@
+<view class="searchClass" wx:if="{{searchClass==true}}">
+    <view class="h2">选择分类进行检索</view>
+    <view class="txt">
+        <text catchtap="searchTap" class="searchClass1 {{searchTapCurrent=='0'?'borders':''}}" data-current="0">介绍信息</text>
+        <text catchtap="searchTap" class="searchClass2 {{searchTapCurrent=='1'?'borders':''}}" data-current="1">个人姓名</text>
+        <text catchtap="searchTap" class="searchClass3 {{searchTapCurrent=='2'?'borders':''}}" data-current="2">公司名称</text>
+    </view>
+</view>
+<view class="search">
+    <view class="search-box">
+        <text bindtap="searchCla">{{searchCltxt}}</text>
+        <input bindconfirm="goods_search_bind" class="search-input" confirmType="search" placeholder="{{splaceholder}}" type="text"></input>
+        <button class="search-btn" size="mini">
+            <icon size="18" type="search"></icon>
+        </button>
+    </view>
+</view>
+<view class="Banner">
+    <swiper autoplay="false" duration="500" indicatorDots="false" interval="3000">
+        <swiper-item wx:for="{{BannerList}}">
+            <navigator appId="{{item.appid}}" extraData="" openType="navigate" path="" target="miniProgram" version="release" wx:if="{{item.appstatr==1}}">
+                <image class="slide-image" mode="aspectFill" src="{{item.icon}}"></image>
+            </navigator>
+            <navigator url="{{item.url}}" wx:else>
+                <image class="slide-image" mode="aspectFill" src="{{item.icon}}"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>
+<view class="recomme">
+    <view bindtap="swichNav" class="tab-item" data-cid="{{item.id}}" data-current="{{index}}" wx:for="{{classMav}}">
+        <label>
+            <image src="{{item.icon}}"></image>
+        </label>
+        <text>{{item.csname}}</text>
+    </view>
+    <view bindtap="swichNavMore" class="tab-item">
+        <label>
+            <image src="../../image/imore.png"></image>
+        </label>
+        <text>更多</text>
+    </view>
+</view>
+<view class="navMenu">
+    <view class="menu_box">
+        <text catchtap="menuTap" class="menu1 {{menuTapCurrent=='0'?'borders':''}}" data-current="0">最新加入</text>
+        <text catchtap="menuTap" class="menu2 {{menuTapCurrent=='1'?'borders':''}}" data-current="1" style="border-right:none">热度曝光</text>
+    </view>
+    <view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+        <include src="../../../components/business_a.wxml"></include>
+    </view>
+    <view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+        <include src="../../../components/business_b.wxml"></include>
+    </view>
+</view>
+<import src="../templates/footer.wxml"></import>
+<template is="footerWx" data="{{...tabBar}}"></template>

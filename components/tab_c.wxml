@@ -1,0 +1,21 @@
+<view class="service">
+    <view class="service-ul">
+        <view class="noServ" wx:if="{{noServ==0}}">
+            <image src="../../image/load.gif"></image>
+        </view>
+        <view class="noServ" wx:if="{{noServ==1}}">
+            <text>尚未添加服务内容</text>
+        </view>
+        <block wx:if="{{service_list!=0&&noServ!=0}}">
+            <view class="service-li" wx:for="{{service_list}}" wx:for-item="s">
+                <navigator url="../serview/serview?id={{s.id}}">
+                    <image mode="aspectFill" src="{{s.photo}}"></image>
+                </navigator>
+                <text>{{s.title}}</text>
+            </view>
+            <view class="h2">
+                <text bindtap="serviceUrl">查看更多</text>
+            </view>
+        </block>
+    </view>
+</view>

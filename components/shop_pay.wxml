@@ -1,0 +1,20 @@
+<view class="pay_2">
+    <view class="userinfo">
+        <view class="author">
+            <image class="av" mode="aspectFit" src="{{userBye.avatar}}"></image>
+        </view>
+        <view class="autxt">
+            <text>{{userBye.nickname}}</text>
+        </view>
+    </view>
+    <view class="more">
+        <text class="bg">店铺名称：{{userBye.dtitle}}</text>
+        <text>平米数：{{userBye.dnumber}}㎡</text>
+        <text class="bg">支付租金：{{payNum}}</text>
+        <text>店铺介绍：{{userBye.dcontent}}</text>
+        <text class="bg">签订时间：{{userBye.ctime}}</text>
+    </view>
+    <view class="btn">
+        <button bindtap="pay" data-num="{{payNum}}" data-pay="{{pay}}">同意并支付租金</button>
+    </view>
+</view>

@@ -1,0 +1,111 @@
+<include src="../../../components/loading_more.wxml" wx:if="{{display==0}}"></include>
+<view class="containers" wx:else>
+    <view class="userinfo">
+        <view class="author">
+            <image class="av" mode="aspectFit" src="{{avatarUrl}}" wx:if="{{avatarUrl!=''&&avatarUrl!=null}}"></image>
+            <image class="av" mode="aspectFit" src="{{userInfo.avatarUrl}}" wx:else></image>
+        </view>
+        <view class="autxt">
+            <text class="{{user_vip=='1'?'textColor':''}}">{{userInfo.nickName}}</text>
+            <label>未读私信 {{MesLength}} 条 / 被举报 {{report}} 次</label>
+        </view>
+    </view>
+    <view class="usermotto">
+        <view class="newColor" wx:if="{{payStart==1}}">
+            <label>信息管理</label>
+            <text></text>
+        </view>
+        <block wx:else>
+            <view class="tx" wx:if="{{user_vip==0}}">
+            使用名片功能，只需支付 {{wxpay}} 元即可使用 {{cycle}} 天
+          </view>
+            <view class="newColor" wx:if="{{user_vip==1}}">
+                <label>信息管理</label>
+                <text></text>
+                <view class="vipTxt" wx:if="{{user_vip==1}}">服务期至 {{paytime}} 日结束</view>
+            </view>
+        </block>
+        <view class="weui-grids">
+            <view class="weui-grid">
+                <view bindtap="basicsUrl" data-cate_id="{{item.cate_id}}" data-index="{{index}}">
+                    <view class="weui-grid__icon">
+                        <image mode="widthFix" src="../../image/c_1.png"></image>
+                    </view>
+                    <text class="weui-grid__label">基本信息</text>
+                </view>
+            </view>
+            <view class="weui-grid">
+                <view bindtap="coverUrl" data-cate_id="{{item.cate_id}}" data-index="{{index}}">
+                    <view class="weui-grid__icon">
+                        <image mode="widthFix" src="../../image/c_3.png"></image>
+                    </view>
+                    <text class="weui-grid__label">封面头像</text>
+                </view>
+            </view>
+            <view class="weui-grid">
+                <view bindtap="contactUrl" data-cate_id="{{item.cate_id}}" data-index="{{index}}">
+                    <view class="weui-grid__icon">
+                        <image mode="widthFix" src="../../image/c_4.png"></image>
+                    </view>
+                    <text class="weui-grid__label">个人介绍</text>
+                </view>
+            </view>
+            <view class="weui-grid">
+                <view bindtap="Business" data-cate_id="{{item.cate_id}}" data-index="{{index}}">
+                    <view class="weui-grid__icon">
+                        <image mode="widthFix" src="../../resource/icon/category.png"></image>
+                    </view>
+                    <text class="weui-grid__label">人脉</text>
+                </view>
+            </view>
+            <view class="weui-grid" style="position:  relative" wx:if="{{wxConfig[0].value==2}}">
+                <view bindtap="Private" data-cate_id="{{item.cate_id}}" data-index="{{index}}">
+                    <view class="weui-grid__icon">
+                        <image mode="widthFix" src="../../image/c_6.png"></image>
+                    </view>
+                    <text class="weui-grid__label">我的私信</text>
+                    <label wx:if="{{MesLength>0}}">{{MesLength}}</label>
+                </view>
+            </view>
+            <view class="weui-grid">
+                <view bindtap="Rewardlog" data-cate_id="{{item.cate_id}}" data-index="{{index}}">
+                    <view class="weui-grid__icon">
+                        <image mode="widthFix" src="../../image/c_2.png"></image>
+                    </view>
+                    <text class="weui-grid__label">热度记录</text>
+                </view>
+            </view>
+            <view class="weui-grid" wx:if="{{wxConfig[8].value==2}}">
+                <view bindtap="shops" data-cate_id="{{item.cate_id}}" data-index="{{index}}">
+                    <view class="weui-grid__icon">
+                        <image mode="widthFix" src="../../image/c_9.png"></image>
+                    </view>
+                    <text class="weui-grid__label">产品服务</text>
+                </view>
+            </view>
+            <view class="weui-grid">
+                <view bindtap="advice" data-cate_id="{{item.cate_id}}" data-index="{{index}}">
+                    <view class="weui-grid__icon">
+                        <image mode="widthFix" src="../../image/c_5.png"></image>
+                    </view>
+                    <text class="weui-grid__label">意见建议</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cellz weui-cell_switchs" style="margin-top: 10px; border-bottom: 1px #F1F1F1 solid;">
+        <view class="weui-cell__bds">{{switchTxt}}</view>
+        <view class="weui-cell__fts">
+            <switch bindchange="switchChange" checked="{{checked}}"></switch>
+        </view>
+    </view>
+    <view bindtap="aboutUrl" class="user_about">
+        <view class="a">关于我们</view>
+        <view class="b"></view>
+    </view>
+    <view class="lookMe">
+        <button bindtap="lookMe">返回我的名片</button>
+    </view>
+</view>
+<import src="../templates/footer.wxml"></import>
+<template is="footerWx" data="{{...tabBar}}"></template>

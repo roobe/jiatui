@@ -1,0 +1,70 @@
+<view class="navMenu">
+    <view class="menu_box">
+        <text catchtap="menuTap" class="menu1 {{menuTapCurrent=='0'?'borders':''}}" data-current="0">未读信息</text>
+        <text catchtap="menuTap" class="menu2 {{menuTapCurrent=='1'?'borders':''}}" data-current="1" style="border-right:none">已读信息</text>
+    </view>
+    <view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+        <block wx:if="{{msNumber!=0}}">
+            <block wx:for="{{msNlist}}" wx:for-index="key" wx:key="content">
+                <view class="ms">
+                    <view class="img">
+                        <image mode="aspectFill" src="{{item.avatar}}"></image>
+                    </view>
+                    <view class="tx">
+                        <text>您有一条新的私信尚未读取</text>
+                        <label>{{item.addtime}}</label>
+                    </view>
+                    <view bindtap="displayDu" class="zt" data-id="{{item.mid}}" data-index="{{key}}">
+                          读取
+                        </view>
+                </view>
+                <view class="content {{item.hidden==true?'hide':'show'}}">
+                    <view class="contents">{{item.content}}</view>
+                    <view class="content_hf">
+                        <form bindsubmit="formSubmit" reportSubmit="true">
+                            <input hidden="true" name="op" type="text" value="{{item.openid}}"></input>
+                            <input hidden="true" name="openid" type="text" value="{{item.op}}"></input>
+                            <input hidden="true" name="nickname" type="text" value="{{userInfo.nickName}}"></input>
+                            <input hidden="true" name="avatar" type="text" value="{{userInfo.avatarUrl}}"></input>
+                            <input class="section" maxlength="255" name="content" placeholder="输入要回复的内容"></input>
+                            <button class="vBtn_ok" formType="submit">回复</button>
+                        </form>
+                    </view>
+                </view>
+            </block>
+        </block>
+        <view class="noData" wx:else>暂无任何信息内容</view>
+    </view>
+    <view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+        <block wx:if="{{msNumber!=0}}">
+            <block wx:for="{{msNlist}}" wx:for-index="key" wx:key="content">
+                <view class="ms">
+                    <view class="img">
+                        <image mode="aspectFill" src="{{item.avatar}}"></image>
+                    </view>
+                    <view class="tx">
+                        <text>当前信息已经读取</text>
+                        <label>{{item.addtime}}</label>
+                    </view>
+                    <view bindtap="delMsn" class="zt" data-id="{{item.mid}}">
+                            删除
+                          </view>
+                </view>
+                <view class="content">
+                    <view class="contents">{{item.content}}</view>
+                    <view class="content_hf">
+                        <form bindsubmit="formSubmit" reportSubmit="true">
+                            <input hidden="true" name="op" type="text" value="{{item.openid}}"></input>
+                            <input hidden="true" name="openid" type="text" value="{{item.op}}"></input>
+                            <input hidden="true" name="nickname" type="text" value="{{userInfo.nickName}}"></input>
+                            <input hidden="true" name="avatar" type="text" value="{{userInfo.avatarUrl}}"></input>
+                            <input class="section" maxlength="255" name="content" placeholder="输入要回复的内容"></input>
+                            <button class="vBtn_ok" formType="submit">回复</button>
+                        </form>
+                    </view>
+                </view>
+            </block>
+        </block>
+        <view class="noData" wx:else>暂无任何信息内容</view>
+    </view>
+</view>

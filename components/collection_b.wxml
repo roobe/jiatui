@@ -1,0 +1,65 @@
+<view class="tab-content">
+    <view class="item-ans" wx:for="{{getCdrList}}">
+        <view bindtap="lookCar" class="li" data-id="{{item.rid}}">
+            <view class="avatar">
+                <image class="img" src="{{item.imgurl}}" wx:if="{{item.imgurl}}"></image>
+                <image class="img" src="../../image/upload.png" wx:else></image>
+            </view>
+            <view class="expertInfo">
+                <view class="name">{{item.xingming}}<block wx:if="{{item.zhiwei}}"> [ {{item.zhiwei}} ]</block>
+                </view>
+                <view class="tag">{{item.gongsi}}</view>
+            </view>
+        </view>
+        <view bindtap="delCar" class="askBtn" data-id="{{item.rid}}" data-n="2">移除</view>
+    </view>
+</view>
+<view class="go-login" wx:if="{{codisplay}}">
+    <view class="layout" id="gocodisplay" style="{{gocodisplay}}">
+        <view class="h2">
+            <label>扫描结果</label>
+            <text bindtap="close_crd" class="icon-close">X</text>
+        </view>
+        <form bindreset="formReset" bindsubmit="formSubmit" reportSubmit="true">
+            <input hidden="true" name="openid" type="text" value="{{openid}}"></input>
+            <input hidden="true" name="imgurl" type="text" value="{{imgUrl}}"></input>
+            <view class="txt">
+                <view wx:if="{{cdr_1}}">
+                    <label>姓名：</label>
+                    <input name="xingming" type="text" value="{{cdr_1}}"></input>
+                </view>
+                <view wx:if="{{cdr_2}}">
+                    <label>公司：</label>
+                    <input name="gongsi" type="text" value="{{cdr_2}}"></input>
+                </view>
+                <view wx:if="{{cdr_3}}">
+                    <label>职位：</label>
+                    <input name="zhiwei" type="text" value="{{cdr_3}}"></input>
+                </view>
+                <view wx:if="{{cdr_4}}">
+                    <label>电话：</label>
+                    <input name="dianhua" type="text" value="{{cdr_4}}"></input>
+                </view>
+                <view wx:if="{{cdr_5}}">
+                    <label>手机：</label>
+                    <input name="shouji" type="text" value="{{cdr_5}}"></input>
+                </view>
+                <view wx:if="{{cdr_6}}">
+                    <label>邮箱：</label>
+                    <input name="youxiang" type="text" value="{{cdr_6}}"></input>
+                </view>
+                <view wx:if="{{cdr_7}}">
+                    <label>微信：</label>
+                    <input name="weixin" type="text" value="{{cdr_7}}"></input>
+                </view>
+            </view>
+            <view class="btnf">
+                <button formType="submit" type="primary">确认无误提交</button>
+            </view>
+        </form>
+    </view>
+    <view class="floatBox floatBoxBg" style="display:block;"></view>
+</view>
+<view class="zhibtn">
+    <button bindtap="getDao">拍照识别纸质名片</button>
+</view>

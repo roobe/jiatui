@@ -1,0 +1,54 @@
+page {
+    background: #F2F2F2;
+}
+
+.containers {
+    text-align: center;
+}
+
+.img {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    padding: 5%;
+}
+
+.img canvas {
+    width: 327px;
+    height: 486px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.row_btn {
+    padding: 0 5% 5% 5%;
+    width: 90%;
+}
+
+.row_btn button {
+    border-radius: 50px;
+    background: #00AA80;
+    font-size: 14px;
+    padding: 4px 0;
+    color: #fff;
+    border: none;
+}
+
+.row_btn button::after {
+    border: none;
+}
+
+.row_btn button.button-hover {
+    color: #fff;
+    background-color: #00C493;
+}
+
+.row_btn button.btn2 {
+    mborder-radius: 50px;
+    background: #FFF;
+    font-size: 14px;
+    padding: 4px 0;
+    color: #999;
+    border: 1px #E3E3E3 solid;
+    margin-top: 10px;
+}

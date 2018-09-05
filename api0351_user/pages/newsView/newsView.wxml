@@ -1,0 +1,15 @@
+<view class="titles">
+    <text>{{NewsView.title}}</text>
+</view>
+<view class="mbTxing">
+    <text>【温馨提示】如果内容好的话麻烦大家帮忙分享</text>
+</view>
+<import src="../../resource/wxParse/wxParse.wxml"></import>
+<view class="viewMain">
+    <view class="content">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+    </view>
+</view>
+<view class="zhuan">
+    <button bindtap="goHome">返回首页</button>
+</view>

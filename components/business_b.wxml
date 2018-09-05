@@ -1,0 +1,17 @@
+<view class="tab-content">
+    <view class="item-ans" wx:for="{{listDatas}}">
+        <view class="avatar">
+            <image class="img" src="{{item.avatarUrl}}" wx:if="{{item.avatarUrl}}"></image>
+            <image class="img" src="../../image/upload.png" wx:else></image>
+        </view>
+        <view class="expertInfo">
+            <view class="name">{{item.nickName}}<block wx:if="{{item.user_zc}}"> [ {{item.user_zc}} ]</block>
+            </view>
+            <view class="answerHistory">
+                <text>{{item.user_gs}}</text>
+                <text>拥有热度 {{item.heat}}点</text>
+            </view>
+        </view>
+        <view bindtap="goUserMroe" class="askBtn" data-id="{{item.id}}">查看</view>
+    </view>
+</view>

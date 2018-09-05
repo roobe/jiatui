@@ -1,0 +1,53 @@
+<view class="content">
+    <view class="h2">
+        <text>【提示】直接点选自己喜欢的主题即可</text>
+    </view>
+    <view bindtap="imgBind" class="bgImg" data-id="1">
+        <label>
+            <image mode="widthFix" src="../../image/bg_1.jpg"></image>
+        </label>
+        <text>雨花石</text>
+    </view>
+    <view bindtap="imgBind" class="bgImg" data-id="2">
+        <label>
+            <image mode="widthFix" src="../../image/bg_2.jpg"></image>
+        </label>
+        <text>蓝色星空</text>
+    </view>
+    <view bindtap="imgBind" class="bgImg" data-id="3">
+        <label>
+            <image mode="widthFix" src="../../image/bg_3.jpg"></image>
+        </label>
+        <text>彩色铅笔</text>
+    </view>
+    <view bindtap="imgBind" class="bgImg" data-id="4">
+        <label>
+            <image mode="widthFix" src="../../image/bg_4.jpg"></image>
+        </label>
+        <text>晨起露珠</text>
+    </view>
+    <view bindtap="imgBind" class="bgImg" data-id="5">
+        <label>
+            <image mode="widthFix" src="../../image/bg_5.jpg"></image>
+        </label>
+        <text>美丽樱花</text>
+    </view>
+    <view bindtap="imgBind" class="bgImg" data-id="6">
+        <label>
+            <image mode="widthFix" src="../../image/bg_6.jpg"></image>
+        </label>
+        <text>青青草地</text>
+    </view>
+    <view bindtap="imgBind" class="bgImg" data-id="7">
+        <label>
+            <image mode="widthFix" src="../../image/bg_7.jpg"></image>
+        </label>
+        <text>中国古建</text>
+    </view>
+    <view bindtap="imgBind" class="bgImg" data-id="8">
+        <label>
+            <image mode="widthFix" src="../../image/bg_8.jpg"></image>
+        </label>
+        <text>五色天空</text>
+    </view>
+</view>

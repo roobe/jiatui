@@ -1,0 +1,17 @@
+<view class="service">
+    <view class="serlist">
+        <view class="Te" wx:for="{{conmment_list}}" wx:key="id">
+            <view class="Te_a">
+                <view class="Te_a_author">
+                    <navigator url="../serview/serview?id={{item.id}}">
+                        <image mode="aspectFill" src="{{item.photo}}"></image>
+                    </navigator>
+                </view>
+                <view class="Te_a_content">
+        {{item.title}}
+      </view>
+            </view>
+        </view>
+    </view>
+    <include src="../../../components/loading_more.wxml"></include>
+</view>

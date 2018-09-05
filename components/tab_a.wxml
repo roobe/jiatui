@@ -1,0 +1,27 @@
+<view class="index_Tb">
+    <text class="text" wx:if="{{userInfo.signature==''||userInfo.signature==null}}">相关简介尚未填写...</text>
+    <block wx:else>
+        <text class="text">{{userInfo.signature}}</text>
+        <view class="picture_item" wx:if="{{wxConfig[7].value==2}}">
+            <view wx:for="{{upload_picture_list}}" wx:key="key">
+                <view class="imgList">
+                    <image bindtap="previewImage" data-index="{{index}}" data-src="{{item.imgUrl}}" mode="aspectFill" src="{{item.imgUrl}}"></image>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+<view class="footerTool">
+    <form bindsubmit="addPhoto">
+        <input hidden="true" name="firstName" type="text" value="{{userInfo.nickName}}"></input>
+        <input hidden="true" name="title" type="text" value="{{userInfo.user_zc}}"></input>
+        <input hidden="true" name="mobilePhoneNumber" type="text" value="{{userInfo.mobile}}"></input>
+        <input hidden="true" name="organization" type="text" value="{{userInfo.user_gs}}"></input>
+        <input hidden="true" name="weChatNumber" type="text" value="{{userInfo.user_weixin}}"></input>
+        <view class="btns" wx:if="{{nulls==1}}">
+            <button formType="submit" id="a">导入到通讯录</button>
+             <include src="../components/collection_c.wxml"></include>
+        </view>
+        <button bindtap="goUser" wx:if="{{nulls==0}}">完善自己的电子名片</button>
+    </form>
+</view>

@@ -1,0 +1,46 @@
+<view class="containers">
+    <form bindreset="formReset" bindsubmit="formSubmit" reportSubmit="true">
+        <input hidden="true" name="openid" type="text" value="{{openid}}"></input>
+        <input hidden="true" name="avatarUrl" type="text" value="{{userInfo.avatarUrl}}" wx:if="{{userData.avatarUrl==null}}"></input>
+        <input hidden="true" name="longitude" type="text" value="{{location.longitude}}"></input>
+        <input hidden="true" name="latitude" type="text" value="{{location.latitude}}"></input>
+        <input hidden="true" name="sid" type="text" value="{{sid}}"></input>
+        <input hidden="true" name="index" type="text" value="{{index}}"></input>
+        <view class="row-picker">
+            <text>行 业</text>
+            <picker bindchange="bindPickerChange" range="{{brands}}" value="{{brandindex}}">
+                <view class="weui-input" data-id="{{index+1}}">{{brands[brandindex]}}</view>
+            </picker>
+        </view>
+        <view class="row">
+            <text>姓 名</text>
+            <input maxlength="4" name="nickname" placeholder="输入您的姓名" type="text" value="{{userData.nickName}}"></input>
+        </view>
+        <view class="row">
+            <text>头 衔</text>
+            <input maxlength="6" name="user_zc" placeholder="输入您的头衔" type="text" value="{{userData.user_zc}}"></input>
+        </view>
+        <view class="row">
+            <text>单 位</text>
+            <input maxlength="16" name="user_gs" placeholder="输入单位名称或地址" type="text" value="{{userData.user_gs}}"></input>
+        </view>
+        <view class="row">
+            <text>定 位</text>
+            <input disabled type="text" name="address" value="{{location.name}}"></input>
+            <button bindtap="chooseLocation">标注位置</button>
+        </view>
+        <view class="row">
+            <text>电 话</text>
+            <input maxlength="11" name="mobile" placeholder="输入您的手机号码" type="number" value="{{userData.mobile}}" wx:if="{{phoneNumber==0}}"></input>
+            <input maxlength="11" name="mobile" placeholder="输入您的手机号码" type="number" value="{{phoneNumber}}" wx:else></input>
+            <button bindgetphonenumber="getPhoneNumber" openType="getPhoneNumber">一键获取</button>
+        </view>
+        <view class="row">
+            <text>微 号</text>
+            <input maxlength="20" name="user_weixin" placeholder="输入您的微信账号" type="text" value="{{userData.user_weixin}}"></input>
+        </view>
+        <view class="row_btn" style="border-bottom: none">
+            <button formType="submit" type="primary">提交保存</button>
+        </view>
+    </form>
+</view>

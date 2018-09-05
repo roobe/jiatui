@@ -1,0 +1,39 @@
+<scroll-view scrollY scrollTop="{{topNum}}" scrollWithAnimation="true">
+    <view class="tools">
+        <text>贸易街好店收录</text>
+        <label>已入驻 {{TongNum}} 家好店，今日新增 {{meNum}} 家</label>
+        <button bindtap="ShopinAdd" wx:if="{{userAdd==0}}">发布产品</button>
+        <button bindtap="ShopAdd" wx:if="{{userAdd==1}}">立即入驻</button>
+    </view>
+    <view class="Banner">
+        <swiper autoplay="false" duration="500" indicatorDots="false" interval="3000">
+            <swiper-item wx:for="{{BannerList}}">
+                <navigator url="{{item.url}}">
+                    <image class="slide-image" mode="aspectFill" src="{{item.icon}}"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="shopList">
+        <view class="navMenu">
+            <view class="menu_box">
+                <text catchtap="menuTap" class="menu1 {{menuTapCurrent=='0'?'borders':''}}" data-current="0">贸易街报</text>
+                <text catchtap="menuTap" class="menu2 {{menuTapCurrent=='1'?'borders':''}}" data-current="1">最新入驻</text>
+                <text catchtap="menuTap" class="menu3 {{menuTapCurrent=='2'?'borders':''}}" data-current="2" style="border-right:none">新品自荐</text>
+            </view>
+            <view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+                <include src="../../../components/shop_tab_a.wxml"></include>
+            </view>
+            <view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+                <include src="../../../components/shop_tab_b.wxml"></include>
+                <view catchtap="goTop" class="i" id="go-top" style="bottom: 15%; opacity: 1;"></view>
+            </view>
+            <view class="tab3" hidden="{{menuTapCurrent!='2'}}">
+                <include src="../../../components/shop_tab_c.wxml"></include>
+                <view catchtap="goTop" class="i" id="go-top" style="bottom: 15%; opacity: 1;"></view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+<import src="../templates/footer.wxml"></import>
+<template is="footerWx" data="{{...tabBar}}"></template>

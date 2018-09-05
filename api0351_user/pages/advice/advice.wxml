@@ -1,0 +1,25 @@
+<view class="userinfo">
+    <view class="author">
+        <image class="av" mode="aspectFit" src="{{avatarUrl}}"></image>
+    </view>
+    <view class="autxt">
+        <text>{{nickName}}</text>
+    </view>
+</view>
+<view class="addMain">
+    <form bindsubmit="formSubmit" reportSubmit="true">
+        <input hidden="true" name="openid" type="text" value="{{openid}}"></input>
+        <input hidden="true" name="nickName" type="text" value="{{nickName}}"></input>
+        <input hidden="true" name="avatarUrl" type="text" value="{{avatarUrl}}"></input>
+        <view class="mbInput">
+            <view class="miaoshu">
+                <textarea class="section" maxlength="255" name="content" placeholder="这里输入反馈信息(并留下您的联系方式)..."></textarea>
+            </view>
+        </view>
+        <view class="mbBtn">
+            <button class="vBtn_ok" disabled="{{disabled}}" formType="submit" loading="{{loading}}">提交信息</button>
+        </view>
+    </form>
+</view>
+<import src="../../import/import.wxml"></import>
+<template is="footer" data="{{text:footer}}"></template>

@@ -1,0 +1,69 @@
+.userinfo {
+    background: #fff;
+    width: 80%;
+    padding: 20px 10% 10px 10%;
+    overflow: hidden;
+    border-bottom: 1px #EEE solid;
+    text-align: center;
+}
+
+.userinfo .author {
+    width: 100%;
+}
+
+.userinfo .author image.av {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 2px #EEE solid;
+    z-index: 10;
+}
+
+.userinfo .autxt {
+    width: 100%;
+    height: 30px;
+}
+
+.userinfo .autxt text {
+    color: #999;
+    display: inline-block;
+    width: 100%;
+}
+
+.mbInput {
+    background: #fff;
+    width: 90%;
+    padding: 0 5%;
+}
+
+.section {
+    padding: 25rpx 0 10rpx 0;
+    width: 100%;
+}
+
+.mbBtn {
+    width: 90%;
+    margin: 40rpx auto 0;
+}
+
+.mbBtn button::after {
+    border: 0;
+}
+
+.mbBtn .vBtn_ok {
+    border-radius: 50px;
+    background: #00AA80;
+    font-size: 14px;
+    padding: 4px 0;
+    color: #fff;
+    border: none;
+}
+
+.miaoshu {
+    padding-bottom: 20rpx;
+}
+
+.miaoshu textarea {
+    font-size: 14PX;
+}

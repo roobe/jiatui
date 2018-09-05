@@ -1,0 +1,49 @@
+page {
+    background: #fff;
+}
+
+.serview {
+    width: 100%;
+}
+
+.serview .h2 {
+    width: 90%;
+    border-bottom: 1px #f2f2f2 solid;
+    padding: 3% 5%;
+    border-top: 1px #F1F1F1 solid;
+}
+
+.serview .ul {
+    width: 90%;
+    padding: 3% 5%;
+}
+
+.serview .pic {
+    width: 100%;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.serview .pic image {
+    width: 90%;
+}
+
+.goHome {
+    width: 90%;
+    padding: 0 5%;
+    position: fixed;
+    bottom: 15px;
+}
+
+.goHome button {
+    border: none;
+    padding: 4px 0;
+    border-radius: 50px;
+    background: #FEA489;
+    color: #fff;
+    font-size: 14px;
+}
+
+.goHome button::after {
+    border: none;
+}

@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="tab-content">
+        <view class="item-ans" wx:for="{{listData}}">
+            <view class="avatar">
+                <image class="img" src="{{item.avatarUrl}}" wx:if="{{item.avatarUrl}}"></image>
+                <image class="img" src="../../image/upload.png" wx:else></image>
+            </view>
+            <view class="expertInfo">
+                <view class="name">{{item.nickName}}<block wx:if="{{item.user_zc}}"> [ {{item.user_zc}} ]</block>
+                </view>
+                <view class="tag">{{item.user_gs}}</view>
+                <view class="tag">拥有热度 {{item.heat}} 点</view>
+            </view>
+            <navigator class="askBtn" url="../../pages/index/index?uid={{item.id}}">查看</navigator>
+        </view>
+        <view style="height:5rpx;" wx:if="{{noMoreData==3}}"></view>
+        <include src="../../../components/loading_more.wxml"></include>
+    </view>
+</view>

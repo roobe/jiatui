@@ -1,0 +1,53 @@
+<view class="container" style="height:{{windowHeight}}px">
+    <scroll-view bindscroll="scroll" scrollTop="{{scroll_Top}}" scrollY="true" style="position: absolute; left: 0; top:0; bottom: 0; right: 0;">
+        <view class="index">
+            <view class="tx">
+                <view>【提示】留言回复后才可以显示在首页</view>
+                <view>【提示】点击对应的问答内容即可进行回复</view>
+            </view>
+            <view class="index_Te">
+                <view class="Te_a" wx:for="{{conmment_list}}" wx:key="id">
+                    <view class="Te_a_author">
+                        <view class="author">
+                            <image src="{{item.avatar}}"></image>
+                        </view>
+                        <text class="names">{{item.nickname}}</text>
+                        <view class="times">
+                            <label bindtap="delMes" data-id="{{item.mid}}">
+                    删除
+                </label>
+                        </view>
+                    </view>
+                    <view bindtap="replyComm" class="Te_a_content" data-id="{{item.mid}}">
+                        <label>{{item.mid}}#</label>{{item.content}}
+          </view>
+                    <view class="content-h" wx:if="{{item.r_content!=0}}">
+                        <view class="UserName">
+                            <view class="UserPic">
+                                <text>我 回复</text>
+                            </view>
+                        </view>
+                        <view class="hui">
+              {{item.r_content}}
+            </view>
+                    </view>
+                </view>
+                <include src="../../../components/loading_more.wxml"></include>
+            </view>
+            <view bindtap="goTop" class="i" id="go-top" style="{{goTopId}}"></view>
+        </view>
+    </scroll-view>
+</view>
+<view class="go-reply floatBox" wx:if="{{is_Reply}}">
+    <view class="layout" id="goreply" style="{{goreply}}">
+        <view class="h2">
+            <label>回复 #{{reply_id}} 的问答 剩余 {{currentNoteLen|0}}/120个字</label>
+            <text bindtap="close_bind" class="icon-close">X</text>
+        </view>
+        <form bindsubmit="formReply" reportSubmit="true">
+            <textarea autoHeight bindinput="bindWordLimit" cursorSpacing="45" fixed="true" maxlength="120" name="r_content" showConfirmBar="false" value="{{r_content}}"></textarea>
+            <button formType="submit">回复信息</button>
+        </form>
+    </view>
+    <view class="floatBox floatBoxBg" style="display:block;"></view>
+</view>

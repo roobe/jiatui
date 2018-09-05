@@ -1,0 +1,16 @@
+<view class="tab-content">
+    <view class="item-ans" wx:for="{{CollData}}">
+        <view bindtap="conllUrl" class="li" data-id="{{item.id}}">
+            <view class="avatar">
+                <image class="img" src="{{item.avatarUrl}}" wx:if="{{item.avatarUrl}}"></image>
+                <image class="img" src="../../image/upload.png" wx:else></image>
+            </view>
+            <view class="expertInfo">
+                <view class="name">{{item.nickName}}<block wx:if="{{item.user_zc}}"> [ {{item.user_zc}} ]</block>
+                </view>
+                <view class="tag">{{item.user_gs}}</view>
+            </view>
+        </view>
+        <view bindtap="delCar" class="askBtn" data-id="{{item.oid}}" data-n="1">移除</view>
+    </view>
+</view>

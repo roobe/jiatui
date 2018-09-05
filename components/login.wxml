@@ -1,0 +1,14 @@
+<view class="go-login" wx:if="{{is_login}}">
+    <view class="layout" id="gologin" style="{{gologin}}">
+        <view class="h2">
+            <label></label>
+            <text bindtap="close_login" class="icon-close">X</text>
+        </view>
+        <view class="txt">
+            <open-data class="wxAvatarUrl" type="userAvatarUrl"></open-data>
+            <text>首次使用需允许授权</text>
+            <button bindgetuserinfo="updateUserInfo" bindtap="close_login" lang="zh_CN" openType="getUserInfo">确认授权</button>
+        </view>
+    </view>
+    <view class="floatBox floatBoxBg" style="display:block;"></view>
+</view>

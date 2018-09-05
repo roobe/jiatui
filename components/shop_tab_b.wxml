@@ -1,0 +1,25 @@
+<view class="noServ" wx:if="{{noServx==0}}">
+    <image src="../../image/load.gif"></image>
+</view>
+<view class="noServ" wx:if="{{noServx==1}}">
+    <text>暂无任何内容</text>
+</view>
+<block wx:if="{{shop!=0&&noServx!=0}}">
+    <view class="ls" wx:for="{{shop}}">
+        <navigator url="../shopView/shopView?id={{item.did}}">
+            <view class="vi">
+                <view class="img">
+                    <image mode="widthFix" src="{{item.avatar}}"></image>
+                </view>
+                <view class="title">
+                    <text>【<block wx:if="{{item.seid==0}}">服务型</block>
+                        <block wx:else>产品型</block>】{{item.dtitle}}</text>
+                    <label>入驻时间：{{item.ctime}}</label>
+                </view>
+            </view>
+            <view class="content">
+          {{item.dcontent}}
+        </view>
+        </navigator>
+    </view>
+</block>

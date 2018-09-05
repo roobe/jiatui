@@ -1,0 +1,113 @@
+.containers {
+    background: #fff;
+    padding: 1% 2%;
+    border-top: 1px #F1F1F1 solid;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px #F1F1F1 solid;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    position: relative;
+}
+
+.row text {
+    flex: 2;
+    text-align: left;
+    color: #999;
+    padding-left: 15px;
+}
+
+.row-picker {
+    display: flex;
+    border-bottom: 1px #F1F1F1 solid;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    position: relative;
+}
+
+.row-picker text {
+    flex: 2;
+    text-align: left;
+    color: #999;
+    padding-left: 15px;
+}
+
+.row-picker picker {
+    font-size: 14px;
+    color: #333;
+    flex: 10;
+    border: none;
+    display: inline-block;
+    padding: 0 0;
+}
+
+.row input {
+    font-size: 14px;
+    color: #333;
+    flex: 10;
+    border: none;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.row button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    border-radius: 0;
+    color: #00AA80;
+    height: 25px;
+    line-height: 25px;
+    z-index: 999999;
+}
+
+.row button {
+    border: none;
+}
+
+.row_area {
+    width: 100%;
+    border-bottom: 1px #F1F1F1 solid;
+    padding-bottom: 10px;
+}
+
+.row_area textarea {
+    font-size: 14px;
+    padding: 10px 3%;
+    width: 94%;
+    min-height: 50px;
+    background: #F5F5F5;
+    margin-top: 10px;
+}
+
+.row_btn {
+    padding: 5%;
+    width: 90%;
+}
+
+.row_btn button {
+    border-radius: 50px;
+    background: #00AA80;
+    font-size: 14px;
+    padding: 4px 0;
+    color: #fff;
+    border: none;
+}
+
+.row_btn button::after {
+    border: none;
+}
+
+.row_btn button.button-hover {
+    color: #008262;
+    background-color: #00C493;
+}
+
+.weui-input {
+    line-height: 3.3em;
+}

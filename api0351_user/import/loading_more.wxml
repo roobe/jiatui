@@ -1,0 +1,13 @@
+<view class="weui-loadmore" wx:if="{{loadingMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+</view>
+<view class="weui-loadmore weui-loadmore_line" wx:if="{{!loadingMore&&!noMoreData}}">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">上拉加载</view>
+</view>
+<view class="weui-loadmore weui-loadmore_line" wx:if="{{noMoreData&&!noData}}">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">已经到底了</view>
+</view>
+<view class="weui-loadmore weui-loadmore_line" wx:if="{{noData}}">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">啥都没有了</view>
+</view>

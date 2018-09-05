@@ -1,0 +1,43 @@
+@import "../../../__wuBaseWxss__/0.wxss";
+
+page {
+    background: #fff;
+}
+
+.serlist {
+    width: 100%;
+    display: inline-block;
+}
+
+.Te {
+    width: 100%;
+}
+
+.Te_a {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    text-align: center;
+    background: #fff;
+    padding-top: 18px;
+    border-bottom: 1px #FAFAFA solid;
+}
+
+.Te_a .Te_a_author {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 110px;
+    overflow: hidden;
+}
+
+.Te_a .Te_a_author image {
+    width: 80%;
+    height: 110px;
+}
+
+.Te_a .Te_a_content {
+    width: 100%;
+    padding-bottom: 10px;
+    color: #666;
+}

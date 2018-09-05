@@ -1,0 +1,41 @@
+<view class="shopNews">
+    <view class="newColor">
+        <label>实力商户</label>
+        <text></text>
+    </view>
+    <view id="ol">
+        <view class="noServ" wx:if="{{noServ==0}}">
+            <image src="../../image/load.gif"></image>
+        </view>
+        <view class="noServ" wx:if="{{noServ==1}}">
+            <text>暂无任何内容</text>
+        </view>
+        <block wx:if="{{shopNumber!=0&&noServ!=0}}">
+            <view class="li" wx:for="{{shopNumber}}">
+                <navigator url="../shopView/shopView?id={{item.did}}">
+                    <image mode="widthFix" src="{{item.avatar}}"></image>
+                </navigator>
+            </view>
+        </block>
+    </view>
+    <view class="newColor">
+        <label>官方热推</label>
+        <text></text>
+    </view>
+    <view id="ul">
+        <view class="noServ" wx:if="{{noServs==0}}">
+            <image src="../../image/load.gif"></image>
+        </view>
+        <view class="noServ" wx:if="{{noServs==1}}">
+            <text>暂无任何内容</text>
+        </view>
+        <block wx:if="{{NewsList!=0&&noServs!=0}}">
+            <navigator url="../newsView/newsView?id={{item.nid}}" wx:for="{{NewsList}}">
+                <view class="li">
+                    <text>{{item.title}}</text>
+                    <label>{{item.addtime}}</label>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</view>

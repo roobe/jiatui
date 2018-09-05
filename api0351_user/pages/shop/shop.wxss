@@ -1,0 +1,339 @@
+page {
+    background: #fff;
+    padding-bottom: 40px;
+}
+
+.displayS {
+    position: absolute;
+    right: 40px;
+    top: 45%;
+    z-index: 9999999;
+    width: 100px;
+    height: 100px;
+}
+
+.displayS image {
+    width: 100%;
+}
+
+.title {
+    background: #fff;
+    width: 90%;
+    border-top: 1px #eee solid;
+    padding: 12px 5% 12px 5%;
+}
+
+.NumBer {
+    background: #fff;
+    width: 90%;
+    border-top: 1px #eee solid;
+    padding: 0 5% 0 5%;
+    display: flex;
+}
+
+.NumBer input {
+    flex: 1;
+    height: 45px;
+    line-height: 45px;
+}
+
+.NumBer label {
+    flex: 1;
+    text-align: center;
+    border-left: 1px #eee solid;
+    height: 45px;
+    line-height: 45px;
+    color: #CC0000;
+}
+
+.NumberTx {
+    width: 90%;
+    background: #FFF5EC;
+    padding: 8px 5%;
+    border-bottom: 2rpx #eee solid;
+    color: #FF8E28;
+    text-align: left;
+}
+
+.NumberTx text {
+    width: 100%;
+    display: block;
+}
+
+.section {
+    padding: 25rpx 0 10rpx 0;
+    width: 100%;
+}
+
+.mbBtn {
+    width: 90%;
+    margin: 40rpx auto 0;
+}
+
+.mbBtn button::after {
+    border: 0;
+}
+
+.mbBtn .vBtn_ok {
+    background: #FAFAFA;
+    color: #999;
+    border: 1px #EEE solid;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.mbTxing {
+    width: 90%;
+    background: #FFF5EC;
+    padding: 8px 5%;
+    border-bottom: 2rpx #FFE2C8 solid;
+    color: #FF8E28;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mbTxing text {
+    width: 100%;
+    display: block;
+}
+
+.sy {
+    width: 100%;
+    text-align: center;
+    color: #666;
+}
+
+.sy label {
+    font-size: 16px;
+    color: #FF8E28;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.ys {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    color: #666;
+}
+
+.ys label {
+    font-size: 16px;
+    color: #FF8E28;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.xuanBtn {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 40rpx 0 40rpx;
+    margin: 10px 0 15px 0;
+    font-size: 14px;
+    border-top: 1px #eee solid;
+}
+
+.diuBtn {
+    flex: 6;
+    background: #FFE3DB;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+}
+
+.is_checked {
+    flex: 6;
+    background: #FEA489;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.jianBtn {
+    flex: 6;
+    background: #FFE3DB;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+}
+
+.is_checksd {
+    flex: 6;
+    background: #FEA489;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.xuanLine {
+    flex: 1;
+    height: 80rpx;
+}
+
+.xuanBtn button::after {
+    border: none;
+}
+
+.lable {
+    border-top: 1px #F1F1F1 solid;
+    width: 90%;
+    padding: 10px 5%;
+    color: #999;
+    background: #FAFAFA;
+}
+
+.miaoshu {
+    border-bottom: 1px #F1F1F1 solid;
+    border-top: 1px #F1F1F1 solid;
+}
+
+.miaoshu textarea {
+    width: 90%;
+    padding: 3% 5%;
+    height: 80px;
+    background: #FFF;
+}
+
+.getGps {
+    width: 92%;
+    background: #FCFCFC;
+    border-bottom: 2rpx #F1F1F1 solid;
+    padding: 3% 4%;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+}
+
+.getGps label {
+    margin-right: 20rpx;
+}
+
+.getGps button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    border-radius: 0;
+    color: #666;
+    height: 25px;
+    line-height: 25px;
+    z-index: 999999;
+}
+
+image.mapIco {
+    width: 4%;
+    margin-right: 15rpx;
+}
+
+.noliyou {
+    width: 94%;
+    margin: 3%;
+}
+
+.noliyou text {
+    display: block;
+    border: 1px #eee solid;
+    padding: 8px 10px;
+    background: #F5F5F5;
+    color: #CC0000;
+}
+
+.dptime {
+    width: 94%;
+    margin: 3%;
+}
+
+.dptime text {
+    display: block;
+    padding: 8px 10px;
+    color: #999;
+    border: 1px #F1F1F1 solid;
+    background: #FAFAFA;
+}
+
+.dptime label {
+    display: block;
+    padding: 8px 10px;
+    color: #999;
+    border: 1px #F1F1F1 solid;
+    border-top: none;
+}
+
+.pay_2 .userinfo {
+    background: #FAFAFA;
+    width: 80%;
+    padding: 20px 10% 10px 10%;
+    overflow: hidden;
+    border-bottom: 1px #EEE solid;
+    text-align: center;
+}
+
+.pay_2 .userinfo .author {
+    width: 100%;
+}
+
+.pay_2 .userinfo .author image.av {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 2px #EEE solid;
+    z-index: 10;
+}
+
+.pay_2 .userinfo .autxt {
+    width: 100%;
+    height: 30px;
+}
+
+.pay_2 .userinfo .autxt text {
+    color: #999;
+    display: inline-block;
+    width: 100%;
+}
+
+.pay_2 .more {
+    border: 1px #F1F1F1 solid;
+    margin: 3%;
+    display: block;
+    border-bottom: none;
+}
+
+.pay_2 .more text {
+    width: 94%;
+    display: inline-block;
+    border-bottom: 1px #F1F1F1 solid;
+    padding: 3%;
+}
+
+.pay_2 .btn {
+    width: 90%;
+    margin: 5%;
+}
+
+.pay_2 .btn button {
+    border-radius: 50px;
+    background: #FEA489;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+.pay_2 .btn button::after {
+    border: none;
+}
+
+.pay_2 .bg {
+    background: #fafafa;
+}

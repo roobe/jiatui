@@ -1,0 +1,5 @@
+<view class="viewNr">
+    <text>
+{{content}}
+</text>
+</view>

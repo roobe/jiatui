@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="weui-grids">
+        <view class="weui-grid" wx:for="{{classMav}}" wx:key="name">
+            <view bindtap="channelRendered" data-id="{{item.id}}" data-index="{{index}}">
+                <view class="weui-grid__icon">
+                    <image mode="scaleToFill" src="{{item.icon}}"></image>
+                </view>
+                <text class="weui-grid__label">{{item.csname}}</text>
+            </view>
+        </view>
+    </view>
+</view>

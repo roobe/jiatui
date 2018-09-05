@@ -1,0 +1,25 @@
+<view class="noServ" wx:if="{{noServa==0}}">
+    <image src="../../image/load.gif"></image>
+</view>
+<view class="noServ" wx:if="{{noServa==1}}">
+    <text>暂无任何内容</text>
+</view>
+<block wx:if="{{shopNlist!=0&&noServa!=0}}">
+    <view bindtap="goUserShop" class="item" data-op="{{item.openid}}" wx:for="{{shopNlist}}">
+        <view class="UserName">
+            <view class="UserPic">
+                <image src="{{item.avatarUrl}}"></image>
+                <text>{{item.nickName}}</text>
+            </view>
+            <view class="UserDate-a">
+                {{item.time}}
+            </view>
+        </view>
+        <text class="textCms">{{item.title}}</text>
+        <view class="viPhoto">
+            <view class="wiPhoto">
+                <image class="poster" mode="widthFix" src="{{item.photo}}"></image>
+            </view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,81 @@
+<include src="../../../components/shop_pay.wxml" wx:if="{{payDis==true}}"></include>
+<block wx:if="{{payDis==false}}">
+    <view class="displayS" wx:if="{{userBye.display==0}}">
+        <image class="vip" mode="widthFix" src="../../image/ds_0.png"></image>
+    </view>
+    <view class="displayS" wx:if="{{userBye.display==1}}">
+        <image class="vip" mode="widthFix" src="../../image/ds_1.png"></image>
+    </view>
+    <view class="displayS" wx:if="{{userBye.display==2}}">
+        <image class="vip" mode="widthFix" src="../../image/ds_2.png"></image>
+    </view>
+    <view class="addMain">
+        <view class="mbTxing">
+            <text>开店租凭申请协议</text>
+        </view>
+        <form bindreset="formReset" bindsubmit="formSubmit" reportSubmit="true">
+            <input hidden="true" name="longitude" type="text" value="{{location.longitude}}"></input>
+            <input hidden="true" name="latitude" type="text" value="{{location.latitude}}"></input>
+            <view class="ys">
+          已售出<label>{{smNumber}}</label>㎡
+      </view>
+            <view class="sy">
+          当前剩余开盘总面积<label>
+                    <block wx:if="{{mxNumber!=0}}">{{mxNumber}}</block>
+                    <block wx:else>{{mNumber}}</block>
+                </label>㎡
+      </view>
+            <view class="xuanBtn">
+                <button bindtap="diushi" class="{{isChecked?'is_checked':'diuBtn'}}" data-id="0">卖服务</button>
+                <view class="xuanLine"></view>
+                <button bindtap="jiandao" class="{{isChecksd?'is_checksd':'jianBtn'}}" data-id="1">卖产品</button>
+            </view>
+            <view class="NumBer">
+                <input bindblur="InputEvent" disabled="true" name="miNum" type="number" value="{{userBye.dnumber}}" wx:if="{{userBye.dnumber}}"></input>
+                <input bindblur="InputEvent" name="miNum" placeholder="输入平米数" type="number" value="" wx:else></input>
+                <label wx:if="{{userBye.display==1||userBye.display==2||userBye.display==0}}">合计 {{userBye.dmoney}} {{Currency}}</label>
+                <label wx:else>合计 {{deng}} {{Currency}}</label>
+            </view>
+            <view class="lable">【提示】您可在总面积中划入一定数量的平米数，划入平米数越大店铺位置越靠前。</view>
+            <view class="title">
+                <input name="title" type="text" value="{{userBye.dtitle}}" wx:if="{{userBye.dtitle}}"></input>
+                <input name="title" placeholder="输入申请的店铺名称" type="text" value="" wx:else></input>
+            </view>
+            <view class="miaoshu">
+                <textarea class="section" maxlength="120" name="content" value="{{userBye.dcontent}}" wx:if="{{userBye.dcontent}}"></textarea>
+                <textarea class="section" maxlength="120" name="content" placeholder="简单的介绍一下您的品牌" wx:else></textarea>
+            </view>
+            <view bindtap="chooseLocation" class="getGps">
+                <image class="mapIco" mode="widthFix" src="../../image/u_addres.png"></image>
+                <label>{{mapGps}}</label>
+                <button bindtap="chooseLocation">标注位置</button>
+            </view>
+            <view class="NumberTx">
+                <text>
+                    <block wx:if="{{zuNum==1}}">租赁方式：日租</block>
+                    <block wx:if="{{zuNum==2}}">租赁方式：月租</block>
+                    <block wx:if="{{zuNum==3}}">租赁方式：年租</block>
+                </text>
+                <text>
+                    <block wx:if="{{zuNum==1}}">每日租金：{{shoPay}}{{Currency}}/㎡</block>
+                    <block wx:if="{{zuNum==2}}">每月租金：{{shoPay}}{{Currency}}/㎡</block>
+                    <block wx:if="{{zuNum==3}}">每年租金：{{shoPay}}{{Currency}}/㎡</block>
+                </text>
+                <text>审批后，您的产品就可进入自由贸易街展示啦
+          </text>
+            </view>
+            <view class="noliyou" wx:if="{{userBye.display==2}}">
+                <text>被拒理由：{{userBye.noliyou}}</text>
+            </view>
+            <view class="dptime" wx:if="{{userBye.display==1}}">
+                <text>审批通过时间：{{userBye.sptime}}</text>
+                <label>您的店铺服务到期时间为 {{userBye.dqtime}}，到期后可继续签订电子协议并支付租金使用，相反如果协议到期后，您的店铺将不在贸易街进行展现。</label>
+            </view>
+            <view class="mbBtn">
+                <button class="vBtn_ok" disabled="true" wx:if="{{userBye.display==0}}">请耐心等待审批结果</button>
+                <button class="vBtn_ok" disabled="{{disabled}}" formType="submit" loading="{{loading}}" wx:if="{{!userBye.display}}">提交审批并支付租金</button>
+                <button class="vBtn_ok" disabled="{{disabled}}" formType="submit" loading="{{loading}}" wx:if="{{userBye.display==2}}">确认修改并提交审批</button>
+            </view>
+        </form>
+    </view>
+</block>

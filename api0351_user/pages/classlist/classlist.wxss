@@ -1,0 +1,111 @@
+page {
+    background: #fff;
+}
+
+.searchLis {
+    width: 100%;
+    text-align: center;
+    padding-top: 30%;
+}
+
+.searchLis image {
+    width: 20%;
+    padding: 0 40%;
+}
+
+.searchLis text {
+    color: #999;
+}
+
+.searchLis button {
+    width: 28%;
+    margin: 15px 36%;
+    font-size: 12px;
+    background: #00AA80;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.searchLis button::after {
+    border: none;
+}
+
+.item-ans {
+    width: 94%;
+    height: 120rpx;
+    display: flex;
+    padding: 3%;
+    border-bottom: 1px solid #F2F2F2;
+    overflow: hidden;
+    position: relative;
+}
+
+.avatar {
+    position: relative;
+    padding-right: 30rpx;
+    flex: 1;
+}
+
+.avatar .img {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.avatar .doyen {
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    bottom: -2px;
+    right: 20rpx;
+}
+
+.expertInfo {
+    color: #B0B0B0;
+    overflow: hidden;
+    flex: 8;
+}
+
+.expertInfo .name {
+    font-size: 14px;
+    color: #000;
+}
+
+.expertInfo .tag {
+    font-size: 12px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.askBtn {
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 50rpx;
+    border: 1px solid #00AA80;
+    color: #00AA80;
+    flex: 1;
+    position: absolute;
+    right: 15px;
+    top: 28px;
+}
+
+.tab-content {
+    background: #fff;
+}
+
+.scoll-h {
+    height: 100%;
+}
+
+.expertInfo .answerHistory {
+    width: 90%;
+    overflow: hidden;
+}
+
+.expertInfo .answerHistory text {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    height: 18px;
+    overflow: hidden;
+}

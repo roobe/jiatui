@@ -1,0 +1,245 @@
+@import "../../../__wuBaseWxss__/0.wxss";
+
+.container {
+    position: relative;
+}
+
+.index {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.index .tx {
+    width: 100%;
+    background: #FFFFF7;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 2rpx #F1F1F1 solid;
+    color: #666;
+}
+
+.index_Te {
+    width: 94%;
+    height: auto;
+    background: #fff;
+    margin: 0 3% 0 3%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.index_Te .Te_a {
+    width: 94%;
+    height: auto;
+    margin: 3%;
+    border-bottom: 2rpx #F9F9F9 solid;
+}
+
+.Te_a .Te_a_author {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.Te_a .author {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: #999;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.Te_a .author image {
+    width: 30px;
+    height: 30px;
+}
+
+.Te_a .names {
+    height: 30px;
+    font-size: 12px;
+}
+
+.Te_a .times {
+    height: 30px;
+    font-size: 12px;
+    float: right;
+    color: #999;
+}
+
+.Te_a .times label {
+    border: 1px #e2e2e2 solid;
+    margin-right: 5px;
+    padding: 1px 5px;
+    background: #F4F8F7;
+    border-radius: 3px;
+}
+
+.Te_a .Te_a_content {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+    word-break: break-all;
+}
+
+.Te_a .Te_a_content label {
+    background: #F5F5F5;
+    display: inline-block;
+    font-size: 8px;
+    color: #666;
+    margin-right: 8px;
+    padding: 2px 5px;
+}
+
+.Te_a_contents {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: center;
+    color: #666;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #CECECE;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#go-top {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 6%;
+    bottom: 15%;
+    z-index: 999;
+    background: url(https://tp.api0351.com/static/images/top.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+    -webkit-transition: bottom .8s ease,opacity .6s ease;
+    webkit-transition: bottom .8s ease,opacity .6s ease;
+}
+
+#goreply {
+    display: block;
+    z-index: 999999;
+    position: absolute;
+    left: 0;
+    bottom: -45%;
+    background-size: contain;
+    opacity: 0;
+    -webkit-transition: bottom .5s ease,opacity .6s ease;
+    webkit-transition: bottom .5s ease,opacity .6s ease;
+}
+
+.go-reply {
+    z-index: 999999;
+}
+
+.go-reply .layout {
+    width: 92%;
+    background: #FFF;
+    margin: 0 4%;
+    z-index: 999999;
+}
+
+.go-reply .layout .h2 {
+    border-bottom: 2rpx #F3F3F3 solid;
+    width: 94%;
+    padding: 0 3%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.go-reply .layout .h2 label {
+    width: 80%;
+    color: #666;
+    float: left;
+}
+
+.go-reply .layout .h2 text {
+    float: right;
+}
+
+.go-reply .layout textarea {
+    background: #F5F5F5;
+    width: 90%;
+    margin: 3%;
+    padding: 2%;
+    min-height: 50px;
+}
+
+.go-reply .layout button {
+    background: #00AA80;
+    color: #fff;
+    margin: 3%;
+    width: 94%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.go-reply .floatBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.go-reply .floatBoxBg {
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999998;
+}
+
+.icon-close {
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    border: 1px solid #ccc;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    color: #999;
+    margin-top: 8px;
+}
+
+.content-h {
+    background: #F4F8F7;
+    width: 94%;
+    padding: 3%;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.content-h .UserName .UserPic {
+    flex: 4;
+    height: 62rpx;
+    overflow: hidden;
+}
+
+.content-h .UserName .UserPic text {
+    width: 300rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    padding-left: 15rpx;
+    overflow: hidden;
+    color: #666;
+    font-size: 12px;
+    border-left: 3px #00AA80 solid;
+}
+
+.content-h .hui {
+    width: 100%;
+    word-break: break-all;
+}

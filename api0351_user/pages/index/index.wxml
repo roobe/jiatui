@@ -1,0 +1,101 @@
+<view class="container">
+    <view class="index">
+        <view class="NewsTop">
+            <view class="topBg">
+                <image mode="aspectFill" src="../../image/bg_{{backgroId}}.jpg"></image>
+            </view>
+            <view bindtap="navMenu" class="admin" wx:if="{{nulls==1}}">
+                <image src="../../image/tool.png"></image>
+            </view>
+            <block wx:if="{{wxConfig[9].value==2}}">
+                <view bindtap="BackGro" class="backGro" wx:if="{{nulls==1&&userInfo.openid==addOpenid}}">
+                    <text>换主题</text>
+                </view>
+            </block>
+            <view class="userAuthor">
+                <image data-src="{{userInfo.avatarUrl}}" mode="aspectFill" src="{{userInfo.avatarUrl}}" wx:if="{{userInfo.avatarUrl!=''&&userInfo.avatarUrl!=null}}"></image>
+                <image mode="aspectFill" src="../../image/nouser.png" wx:else></image>
+            </view>
+            <view class="userName">
+                <text wx:if="{{nulls==1}}">{{userInfo.nickName}}</text>
+                <text wx:if="{{nulls==0}}">游客</text>
+            </view>
+            <view class="userOther">
+                <block wx:if="{{userInfo.user_zc!=undefined&&userInfo.user_zc!=''}}">{{userInfo.user_zc}} / </block>足迹：{{gzNumber}}  /  热度：<block wx:if="{{userInfo.heat}}">{{userInfo.heat}}</block>
+                <block wx:else>0</block>
+            </view>
+        </view>
+        <view bindtap="copyWx" class="mobile" data-wx="{{userInfo.user_weixin}}" wx:if="{{userInfo.user_weixin}}">
+            <image class="img" mode="widthFix" src="../../image/u_wx.png"></image>
+            <text>微信：{{userInfo.user_weixin}}</text>
+            <label>
+        复制
+      </label>
+        </view>
+        <view bindtap="callPhoto" class="mobile" data-mobile="{{userInfo.mobile}}" wx:if="{{userInfo.mobile}}">
+            <image class="img" mode="widthFix" src="../../image/u_mobile.png"></image>
+            <text>电话：{{userInfo.mobile}}</text>
+            <label>
+        拨打
+      </label>
+        </view>
+        <view class="user_gs" wx:if="{{userInfo.user_gs}}" bindtap="getMaps">
+            <image class="img" mode="widthFix" src="../../image/u_gs.png"></image>
+            <text>{{userInfo.user_gs}}</text>
+            <view bindtap="getMaps" class="daohang">导航</view>
+        </view>
+         <view class="user_gs" wx:if="{{address}}" bindtap="getMaps">
+            <image class="img" mode="widthFix" src="../../image/u_addres.png"></image>
+            <text>{{address}}</text>
+            <view bindtap="getMaps" class="daohang">导航</view>
+        </view>
+        <view class="tools">
+            <view bindtap="Reward" class="tools-grid r">
+                <view class="tools-icon">
+                    <image mode="widthFix" src="../../image/good.png"></image>
+                </view>
+                <text class="tools-label">热度</text>
+            </view>
+            <view bindtap="replyComm" class="tools-grid r" wx:if="{{wxConfig[0].value==2}}">
+                <view class="tools-icon">
+                    <image mode="widthFix" src="../../image/msn.png"></image>
+                </view>
+                <text class="tools-label">私信</text>
+            </view>
+            <view bindtap="Collection" class="tools-grid r">
+                <view class="tools-icon">
+                    <image mode="widthFix" src="../../image/fio.png"></image>
+                </view>
+                <text class="tools-label" wx:if="{{sdisplay==1}}">已收藏</text>
+                <text class="tools-label" wx:if="{{sdisplay==0}}">收藏</text>
+            </view>
+            <view bindtap="onShareAppMessage" class="tools-grid" style="position:  relative">
+                <view class="tools-icon">
+                    <image mode="widthFix" src="../../image/preservation.png"></image>
+                </view>
+                <text class="tools-label">分享</text>
+                <button class="tools-labels" openType="share">分享</button>
+            </view>
+        </view>
+        <view class="navMenu">
+            <view class="menu_box">
+                <text catchtap="menuTap" class="menu1 {{menuTapCurrent=='0'?'borders':''}}" data-current="0">关于</text>
+                <text catchtap="menuTap" class="menu2 {{menuTapCurrent=='1'?'borders':''}}" data-current="1" style="border-right:none" wx:if="{{wxConfig[8].value==2}}">服务</text>
+            </view>
+            <view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+                <include src="../../../components/tab_a.wxml"></include>
+            </view>
+            <view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+                <include src="../../../components/tab_c.wxml"></include>
+            </view>
+        </view>
+    </view>
+</view>
+<view bindtap="Report" class="no_jubao">
+    <text> - 不良信息举报 -</text>
+</view>
+<import src="../templates/footer.wxml"></import>
+<template is="footerWx" data="{{...tabBar}}"></template>
+<include src="../../../components/message.wxml"></include>
+<include src="../../../components/report.wxml"></include>
+<include src="../../../components/login.wxml"></include>

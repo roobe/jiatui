@@ -1,0 +1,125 @@
+page {
+    background: #fff;
+    padding-bottom: 40px;
+}
+
+.user {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px #EEE solid;
+    background: #FAFAFA;
+    padding-top: 20px;
+    border-top: 1px #F1F1F1 solid;
+}
+
+.userinfo {
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+}
+
+.userinfo .author {
+    width: 100%;
+}
+
+.userinfo .author image.av {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 2px #EEE solid;
+    z-index: 10;
+}
+
+.userinfo .autxt {
+    width: 100%;
+    height: 30px;
+}
+
+.userinfo .autxt text {
+    color: #999;
+    display: inline-block;
+    width: 100%;
+}
+
+.RewardList {
+    width: 90%;
+    height: 55px;
+    display: flex;
+    border-bottom: 1px #F1F1F1 solid;
+    padding: 3% 5%;
+}
+
+.RewardList .p {
+    flex: 1;
+}
+
+.RewardList .p image {
+    width: 55px;
+    height: 55px;
+}
+
+.RewardList .t {
+    flex: 7;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.RewardList .t text {
+    width: 100%;
+    display: block;
+}
+
+.RewardList .t view {
+    color: #666;
+}
+
+.RewardList .t label {
+    color: #CC0000;
+}
+
+.RewardList .zt {
+    flex: 4;
+    text-align: right;
+    position: relative;
+}
+
+.RewardList .zt button {
+    border: 1px #00AA80 solid;
+    font-size: 12px;
+    padding: 0px 12px;
+    border-radius: 50px;
+    color: #00AA80;
+    position: absolute;
+    right: 0px;
+    bottom: 14px;
+    background: #fff;
+}
+
+.RewardList .zt button::after {
+    border: none;
+}
+
+.content {
+    border-bottom: 1px #F1F1F1 solid;
+    width: 90%;
+    padding: 3% 5%;
+    color: #666;
+}
+
+.tx {
+    width: 90%;
+    padding: 3% 5%;
+    border-bottom: 1px #F1F1F1 solid;
+}
+
+.tx text {
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.tx label {
+    color: #666;
+}

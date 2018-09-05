@@ -1,0 +1,44 @@
+<view class="ls">
+    <view class="vi">
+        <view class="img">
+            <image mode="widthFix" src="{{shop.avatar}}"></image>
+        </view>
+        <view class="title">
+            <text>{{shop.dtitle}}</text>
+            <label>店铺标签：<block wx:if="{{shop.seid==0}}">服务型</block>
+                <block wx:else>产品型</block> / 面积：{{shop.dnumber}}㎡</label>
+        </view>
+    </view>
+    <view class="content">
+        {{shop.dcontent}}
+    </view>
+</view>
+<view class="service">
+    <view class="h2">
+        <label>推荐产品</label>
+        <text bindtap="serviceUrl" data-op="{{shop.openid}}">更多</text>
+    </view>
+    <view class="service-ul">
+        <view class="noServ" wx:if="{{noServ==0}}">
+            <image src="../../image/load.gif"></image>
+        </view>
+        <view class="noServ" wx:if="{{noServ==1}}">
+            <text>尚未添加服务内容</text>
+        </view>
+        <block wx:if="{{service_list!=0&&noServ!=0}}">
+            <view class="service-li" wx:for="{{service_list}}" wx:for-item="s">
+                <navigator url="../serview/serview?id={{s.id}}">
+                    <image mode="aspectFill" src="{{s.photo}}"></image>
+                    <text>{{s.title}}</text>
+                    <label></label>
+                </navigator>
+            </view>
+        </block>
+    </view>
+</view>
+<view class="map">
+    <view class="h2">
+        <label>商户定位</label>
+    </view>
+    <map showLocation id="map" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="18" style="width: 100%; height: 200px;"></map>
+</view>

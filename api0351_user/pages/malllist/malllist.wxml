@@ -1,0 +1,22 @@
+<view class="searchLis" wx:if="{{listDisplay}}">
+    <image mode="widthFix" src="../../image/nodata.png"></image>
+    <text> - 什么也没找到 -</text>
+    <button bindtap="goTo">返回上一页</button>
+</view>
+<view class="tab-content" wx:else>
+    <view class="item-ans" wx:for="{{listData}}">
+        <view class="avatar">
+            <image class="img" src="{{item.avatarUrl}}" wx:if="{{item.avatarUrl}}"></image>
+            <image class="img" src="../../image/upload.png" wx:else></image>
+        </view>
+        <view class="expertInfo">
+            <view class="name">{{item.nickName}}<block wx:if="{{item.user_zc}}"> [ {{item.user_zc}} ]</block>
+            </view>
+            <view class="answerHistory">
+                <text>{{item.user_gs}}</text>
+                <text>拥有热度 {{item.heat}}点</text>
+            </view>
+        </view>
+        <navigator class="askBtn" url="../../pages/index/index?uid={{item.id}}">查看</navigator>
+    </view>
+</view>

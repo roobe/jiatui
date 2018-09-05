@@ -1,0 +1,49 @@
+page {
+}
+
+.content {
+    width: 86%;
+    margin: 3%;
+    background: #fff;
+    display: inline-block;
+    padding: 5% 4% 0 4%;
+}
+
+.content .h2 {
+    width: 100%;
+    border-bottom: 1px #f1f1f1 solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #FD8060;
+}
+
+.bgImg {
+    width: 50%;
+    height: 90px;
+    float: left;
+    text-align: center;
+    display: block;
+    background: #fff;
+    margin-bottom: 15px;
+    border-bottom: 1px #f1f1f1 solid;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.bgImg text {
+    width: 100%;
+    color: #666;
+}
+
+.bgImg label {
+    width: 90%;
+    height: 38px;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 5%;
+}
+
+.bgImg label image {
+    width: 100%;
+}

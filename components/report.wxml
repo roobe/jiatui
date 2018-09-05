@@ -1,0 +1,19 @@
+<view class="go-reply floatBox" wx:if="{{is_Report}}">
+    <view class="layout" id="goreply" style="{{goreply}}">
+        <view class="h2">
+            <label>剩余 {{currentNoteLen|0}}/120个字</label>
+            <text bindtap="close_report" class="icon-close">X</text>
+        </view>
+        <form bindsubmit="formReport" reportSubmit="true">
+            <input hidden="true" name="op" type="text" value="{{userInfo.openid}}"></input>
+            <input hidden="true" name="openid" type="text" value="{{addOpenid}}"></input>
+            <input hidden="true" name="nickname" type="text" value="{{addNnickName}}"></input>
+            <input hidden="true" name="avatar" type="text" value="{{addAvatarUrl}}"></input>
+            <input hidden="true" name="jid" type="text" value="1"></input>
+            <input hidden="true" name="dis" type="text" value="0"></input>
+            <textarea autoHeight bindinput="bindWordLimit" cursorSpacing="45" fixed="true" maxlength="120" name="content" placeholder="请说明举报理由" showConfirmBar="false" value="{{r_content}}"></textarea>
+            <button formType="submit">提交举报信息</button>
+        </form>
+    </view>
+    <view class="floatBox floatBoxBg" style="display:block;"></view>
+</view>

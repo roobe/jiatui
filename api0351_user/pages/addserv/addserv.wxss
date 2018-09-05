@@ -1,0 +1,91 @@
+.mbInput {
+    background: #fff;
+    width: 90%;
+    padding: 0 5%;
+}
+
+.checkimg {
+    width: 90%;
+    background: #fff;
+    border-top: 2rpx #F5F5F5 dashed;
+    height: 140rpx;
+    overflow: hidden;
+    padding: 3% 5%;
+}
+
+.section {
+    padding: 25rpx 0 10rpx 0;
+    width: 100%;
+}
+
+.mbBtn {
+    width: 90%;
+    margin: 40rpx auto 0;
+}
+
+.mbBtn button::after {
+    border: 0;
+}
+
+.mbBtn .vBtn_ok {
+    border: 0;
+    background: #00AA80;
+    color: #fff;
+    margin-top: 30rpx;
+    margin-bottom: 20rpx;
+    border-radius: 100rpx;
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+.mbTxing {
+    width: 90%;
+    background: #FFF5EC;
+    padding: 3% 5%;
+    margin-bottom: 30rpx;
+    border-bottom: 2rpx #FFE2C8 solid;
+    color: #FF8E28;
+    font-size: 10pt;
+}
+
+.mbTxing text {
+    width: 100%;
+    display: block;
+}
+
+.uploadPic {
+    width: 20%;
+    margin-right: 20rpx;
+}
+
+.uploadPics {
+    width: 20%;
+    height: 135rpx;
+    margin-right: 20rpx;
+}
+
+.miaoshu {
+    padding-bottom: 20rpx;
+}
+
+.duixiang {
+    width: 90%;
+    background: #fff;
+    border-bottom: 2rpx #F2F2F2 solid;
+    padding: 16rpx 5% 8rpx 5%;
+    position: relative;
+}
+
+.duixiang label {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+}
+
+.duixiang input {
+    width: 85%;
+    margin-left: 15%;
+    display: inline-block;
+    padding: 5px 0;
+}

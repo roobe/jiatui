@@ -1,0 +1,14 @@
+<view class="containers">
+    <view class="img">
+        <canvas canvasId="shareCanvas"></canvas>
+    </view>
+</view>
+<view class="row_btn">
+    <view class="main">
+        <view class="top">
+            <button bindtap="saveImgToPhotosAlbumTap" class="btn1">保存到相册</button>
+            <button bindtap="Share" class="btn2">重新生成</button>
+        </view>
+        <view class="bg"></view>
+    </view>
+</view>

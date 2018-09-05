@@ -1,0 +1,14 @@
+<view class="serview">
+    <view class="h2">
+        {{viewData.title}}
+    </view>
+    <view class="ul">
+        {{viewData.content}}
+    </view>
+    <view class="pic">
+        <image mode="widthFix" src="{{viewData.photo}}"></image>
+    </view>
+</view>
+<view class="goHome">
+    <button bindtap="goHome">返回首页</button>
+</view>

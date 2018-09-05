@@ -1,0 +1,41 @@
+<view class="index_Tc">
+    <view class="h2">
+        <label>最新被回复的10条信息</label>
+        <text>剩余 {{currentNoteLen|0}}/120个字</text>
+    </view>
+    <view class="book">
+        <form bindsubmit="formSubmit" reportSubmit="true">
+            <view class="rbtn">
+                <view class="a">
+                    <textarea bindinput="bindWordLimit" cursorSpacing="20" fixed="true" maxlength="120" name="content" value="{{content}}"></textarea>
+                </view>
+                <view class="b">
+                    <button formType="submit">提交</button>
+                </view>
+            </view>
+        </form>
+    </view>
+    <view class="Te_a" wx:for="{{conmment_list}}" wx:key="mid">
+        <view class="Te_a_author">
+            <view class="author">
+                <image src="{{item.avatar}}"></image>
+            </view>
+            <text class="names">{{item.nickname}}</text>
+            <text class="times">{{item.addtime}}</text>
+        </view>
+        <view class="Te_a_content">
+            <label>{{item.mid}}#</label>{{item.content}}
+        </view>
+        <view class="content-h" wx:if="{{item.r_content!=0}}">
+            <view class="UserName">
+                <view class="UserPic">
+                    <text>{{userInfo.nickName}} 回复</text>
+                </view>
+            </view>
+            <view class="hui">
+            {{item.r_content}}
+          </view>
+        </view>
+    </view>
+    <include src="loading_more.wxml"></include>
+</view>
